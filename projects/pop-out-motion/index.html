@@ -225,9 +225,8 @@
 			</tr>
 		</table>
 	</center>
-	<span style="font-size:18px"><p style="line-height:0.2">(*: equal contributions)</p></span>
 
-
+	&nbsp;
 	<hr>
 
 	<table align=center width=850px>
@@ -248,7 +247,7 @@
 
 	<hr>
 
-	<center><h1>Method</h1></center>
+	<center><h1>Approach</h1></center>
 
 	<table align=center width=420px>
 		<center>
@@ -271,7 +270,7 @@
 		<center>
 			<tr>
 				<td>
-					Short description if wanted
+					We introduce a neural network that can predict the shape Laplacian of the underlying volume of a 3D point cloud reconstructed from a 2D image — without directly converting the point cloud to a volume. Considering that the deformation energy can be discretized with the standard linear FEM Laplacian <i>LM <sup>−1</sup>L</i> (where L is a symmetric cotangent Laplacian matrix and M is a diagonal lumped mass matrix), we design our network to learn the matrices L and M −1 from the supervision obtained from a ground truth 3D mesh. The elements in the inverse mass matrix M −1 are predicted for each individual point, while the elements of the cotangent Laplacian matrix L are predicted by taking pairs of the input points. We use a symmetric feature aggregation function for such pairs and also a weight module to enforce the output matrix L to be symmetric and sparse. In test time, we recover the deformation energy from the predicted L and M −1 to compute bounded biharmonic weights with user-specified deformation handles. Since our method learns the shape Laplacian instead of the handle-dependent deformation weights, it can generalize well to arbitrary handle configurations.
 				</td>
 			</tr>
 		</center>
