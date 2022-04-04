@@ -195,18 +195,18 @@
 				<tr>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:22px"><a href='https://arxiv.org/pdf/2203.15235.pdf'>[Paper]</a></span>
+							<span style="font-size:24px"><a href='https://arxiv.org/pdf/2203.15235.pdf'>[Paper]</a></span>
 						</center>
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:22px"><a href='https://youtu.be/gHxwHxIZiuM'>[Video]</a></span><br>
+							<span style="font-size:24px"><a href='https://youtu.be/gHxwHxIZiuM'>[Video]</a></span><br>
 						</center>
 					</td>
 
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:22px"><a href='https://github.com/jyunlee/Pop-Out-Motion'>[Code]</a></span><br>
+							<span style="font-size:24px"><a href='https://github.com/jyunlee/Pop-Out-Motion'>[Code]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -229,7 +229,7 @@
 
 	&nbsp;
 	<hr>
-
+	&nbsp;
 	<table align=center width=850px>
 		<center><h1>Abstract</h1></center>
 		<tr>
@@ -242,11 +242,14 @@
 
 	&nbsp;
 	<hr>
+
+	&nbsp;
 	<center><h1>Video</h1></center>
 	<p align="center">
 		<iframe width="784" height="441" src="https://www.youtube.com/embed/gHxwHxIZiuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</p>
 
+	&nbsp;
 	<hr>
 
 	&nbsp;
@@ -272,7 +275,7 @@
 	<table align=center width=850px>
 		<center>
 			<tr>
-				<t>
+				<td>
 				We introduce a neural network that can predict the shape Laplacian of the underlying volume of a 3D point cloud reconstructed from a 2D image — without directly converting the point cloud to a volume. Considering that the deformation energy can be discretized with the standard linear FEM Laplacian <i>LM<sup>−1</sup>L</i> (where <i>L</i> is a symmetric cotangent Laplacian matrix and <i>M</i> is a diagonal lumped mass matrix), we design our network to learn the matrices <i>L</i> and <i>M<sup>−1</sup></i> from the supervision obtained from a ground truth 3D mesh. The elements in the inverse mass matrix <i>M<sup>−1</sup></i>  are predicted for each individual point, while the elements of the cotangent Laplacian matrix <i>L</i> are predicted by taking pairs of the input points. We use a symmetric feature aggregation function for such pairs and also a weight module to enforce the output matrix <i>L</i> to be symmetric and sparse. In test time, we recover the deformation energy from the predicted <i>L</i> and <i>M<sup>−1</sup></i>  to compute bounded biharmonic weights with user-specified deformation handles. Since our method learns the shape Laplacian instead of the handle-dependent deformation weights, it can generalize well to arbitrary handle configurations.
 				</td>
 			</tr>
@@ -287,7 +290,7 @@
 		<tr>
 			<td><a href="https://arxiv.org/pdf/2203.15235.pdf"><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
 			<td><span style="font-size:14pt">Jihyun Lee*, Minhyuk Sung*, Hyunjin Kim, Tae-Kyun Kim.<br>
-			<td><span style="font-size:10pt">(*: equal contributions)<br>
+			(*: equal contributions)
 				<b>Pop-Out Motion: 3D-Aware Image Deformation via Learning the Shape Laplacian.</b><br>
 				In CVPR, 2022.<br>
 				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
