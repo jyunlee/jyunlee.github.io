@@ -139,9 +139,10 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Pop-Out Motion: 3D-Aware Image Deformation via Learning the Shape Laplacian</span>
-		<table align=center width=600px>
-			<table align=center width=600px>
+		<span style="font-size:36px">Pop-Out Motion: 3D-Aware Image Deformation
+			via Learning the Shape Laplacian</span>
+		<table align=center width=1000px>
+			<table align=center width=1000px>
 				<tr>
 					<td align=center width=100px>
 						<center>
@@ -214,27 +215,18 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+				We propose a framework that can deform an object in a 2D image as it exists in 3D space. Most existing methods for 3D-aware image manipulation are limited to (1) only changing the global scene information or depth, or (2) manipulating an object of specific categories. In this paper, we present a 3D-aware image deformation method with minimal restrictions on shape category and deformation type. While our framework leverages 2D-to-3D reconstruction, we argue that reconstruction is not sufficient for realistic deformations due to the vulnerability to topological errors. Thus, we propose to take a supervised learning-based approach to predict the shape Laplacian of the underlying volume of a 3D reconstruction represented as a point cloud. Given the deformation energy calculated using the predicted shape Laplacian and user-defined deformation handles (e.g., keypoints), we obtain bounded biharmonic weights to model plausible handle-based image deformation. In the experiments, we present our results of deforming 2D character and clothed human images. We also quantitatively show that our approach can produce more accurate deformation weights compared to alternative methods (i.e., mesh reconstruction and point cloud Laplacian methods).
 			</td>
 		</tr>
 	</table>
 	<br>
 
 	<hr>
-	<center><h1>Talk</h1></center>
+	<center><h1>Video</h1></center>
 	<p align="center">
-		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
+		<iframe width="660" height="395" src="https://www.youtube.com/watch?v=gHxwHxIZiuM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 	</p>
 
-	<table align=center width=800px>
-		<br>
-		<tr>
-			<center>
-				<span style="font-size:28px"><a href=''>[Slides]</a>
-				</span>
-			</center>
-		</tr>
-	</table>
 	<hr>
 
 	<center><h1>Code</h1></center>
