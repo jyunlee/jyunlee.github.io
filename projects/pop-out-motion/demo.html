@@ -1,0 +1,44 @@
+
+
+<!-- Licensed under a BSD license. See license.html for license -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Control</title>
+    <style>
+    /* body {background-color: #ddd} */
+    #demo-container {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      /* width: 690px;
+      height: 500px; */
+      /* display: block; */
+    }
+    /* *[data-obj] {
+      display: inline-block;
+      width: 690px;
+      height: 388px;
+    }
+    p {
+      margin: 1em auto;
+      max-width: 500px;
+      font-size: xx-large;
+    } */
+    </style>
+  </head>
+  <body>
+    <!-- <canvas id="canvas"></canvas> -->
+    <div id="demo-container" style="z-index:-1;"></div>
+    <p id="message" style="z-index:1;"></p>
+    <div class="demo-data" data-name="Michelle" data-obj="data/demo/1/source_mesh.obj" data-cage="data/demo/1/cage.txt" data-kpts="data/demo/1/source_keypoints.txt" data-weights="data/demo/1/weights.txt" data-influence="data/demo/1/influence.txt" data-vertices="data/demo/1/source_vertices.txt" data-faces="data/demo/1/source_faces.txt" data-colors="data/demo/1/source_vertex_colors.txt"></div>
+    <div class="demo-data" data-name="Mousey" data-obj="data/demo/2/source_mesh.obj" data-cage="data/demo/2/cage.txt" data-kpts="data/demo/2/source_keypoints.txt" data-weights="data/demo/2/weights.txt" data-influence="data/demo/2/influence.txt" data-vertices="data/demo/2/source_vertices.txt" data-faces="data/demo/2/source_faces.txt" data-colors="data/demo/2/source_vertex_colors.txt"></div>
+    <div class="demo-data" data-name="Ortiz" data-obj="data/demo/3/source_mesh.obj" data-cage="data/demo/3/cage.txt" data-kpts="data/demo/3/source_keypoints.txt" data-weights="data/demo/3/weights.txt" data-influence="data/demo/3/influence.txt" data-vertices="data/demo/3/source_vertices.txt" data-faces="data/demo/3/source_faces.txt" data-colors="data/demo/3/source_vertex_colors.txt"></div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.4.0/dist/tf.min.js"></script>
+  <script src="js/demo.js" type="module"></script>
+</html>
