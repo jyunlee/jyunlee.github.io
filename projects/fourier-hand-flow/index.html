@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>FourierHandFlow</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">👋 FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jyunlee.github.io/" target="_blank">Jihyun Lee</a><sup>1</sup>,&nbsp;</span>
+                <span class="author-block">
+                  <a href="https://junbongjang.github.io/" target="_blank">Junbong Jang</a><sup>1</sup>,&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://donghwankim0101.github.io/" target="_blank">Donghwan Kim</a><sup>1</sup>,&nbsp;</span>
+                    <span class="author-block">
+                      <a href="https://mhsung.github.io/" target="_blank">Minhyuk Sung</a><sup>1</sup>,&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/view/tkkim/home" target="_blank">Tae-Kyun Kim</a><sup>1, 2</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">KAIST<sup>1</sup>,&nbsp;&nbsp;Imperial College London<sup>2</sup><br><b>NeurIPS 2023</b></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2307.08100.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!--
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+                -->
+
+
+
+                  <!-- Github link -->
+
+                  <span class="link-block">
+                    <a href="https://github.com/jyunlee/FourierHandFlow" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!--
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="item">
+      <!-- Your image here -->
+      <img src="data/fig_teaser.png" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        From monocular RGB sequence inputs, <b>FourierHandFlow</b> learns 4D hand shapes that
+         are continuous in both space and time. It models temporal shape evolutions with query flows learned
+         as a fixed number of coefficients for Fourier series to guarantee smooth temporal dynamics.
+     </h2>
+   </div>
+   <br><br>
+
+    <!-- <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+      </h2>
+    </div> -->
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent 4D shape representations model continuous temporal evolution of implicit
+            shapes by (1) learning query flows without leveraging shape and articulation priors
+            or (2) decoding shape occupancies separately for each time value. Thus, they
+            do not effectively capture implicit correspondences between articulated shapes
+            or regularize jittery temporal deformations. <b>In this work, we present FourierHandFlow, which is a spatio-temporally continuous representation for human
+            hands that combines a 3D occupancy field with articulation-aware query flows
+            represented as Fourier series. Given an input RGB sequence, we aim to learn
+            a fixed number of Fourier coefficients for each query flow to guarantee smooth
+            and continuous temporal shape dynamics.</b> To effectively model spatio-temporal
+            deformations of articulated hands, we compose our 4D representation based on
+            two types of Fourier query flow: (1) pose flow that models query dynamics influenced by hand articulation changes via implicit linear blend skinning and (2)
+            shape flow that models query-wise displacement flow. In the experiments, our
+            method achieves state-of-the-art results on video-based 4D reconstruction while
+            being computationally more efficient than the existing 3D/4D implicit shape representations. We additionally show our results on motion inter- and extrapolation and
+            texture transfer using the learned correspondences of implicit shapes. To the best
+            of our knowledge, FourierHandFlow is the first neural 4D continuous hand
+            representation learned from RGB videos.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">4D Reconstruction from RGB Videos</h2>
+      <div class="content has-text-justified">
+        <p>
+          FourierHandFlow achieves the ✨state-of-the-art hand reconstruction accuracy✨ on 30FPS version of InterHand2.6M. It
+produces plausible hand shapes that are well-aligned to the input RGB observations. Please also refer to the paper for quantitative comparisons with more baseline methods.
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_recon-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_recon-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="data/video_recon-3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Texture Transfer</h2>
+      <div class="content has-text-justified">
+        <p>
+          FourierHandFlow accurately captures ✨implicit shape correspondences✨ between hands, which naturally allows applications such as texture transfer.
+          Given the reference texture defined in our canonical hand field, it achieves high-quality texture transfer on the randomly sampled sequences.
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_textrans-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_textrans-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="data/video_textrans-3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Motion Interpolation & Extrapolation</h2>
+      <div class="content has-text-justified">
+        <p>
+          FourierHandFlow is the ✨first spatio-temporally continuous hand representation✨. Given RGB frames observed at each time step, it inherently allows the sampling of hand shapes at inter- and extrapolated
+          time values from the learned Fourier query flows. The sampled shapes are shown to model smooth temporal evolution of hand shapes.
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_interp-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_interp-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+            <!-- Your video file here -->
+            <source src="data/video_interp-3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Computational Efficiency</h2>
+      <div class="content has-text-justified">
+        <p>
+          FourierHandFlow parameterizes query flows (i.e., query trajectories over time) using a fixed number of coefficients of Fourier Series.
+          Thus, it can preserve temporal shape continuity while being more ✨computationally efficient✨ than the exiting 4D continuous representations based on ODE solving or per-time occupancy
+decoding.
+        </p>
+        <img src="data/fig_comp.png" alt="MY ALT TEXT"/>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Model Architecture</h2>
+      <div class="content has-text-justified">
+        <p>
+          We model a query flow by estimating the joint flow (blue upper branch) and the shape flow (pink lower branch).
+          Our joint flow network first predicts the Fourier coefficients for the flows of hand joint positions. The predicted joint flow is propagated to a query point via implicit linear
+          blend skinning. Our shape flow network then predicts the Fourier coefficients for the query-wise displacement flow w.r.t. the estimated joint flow. Our final query flow is computed as a sum of the pose and shape flows. Please check the paper for more details.
+        </p>
+        <img src="data/fig_model.png" alt="MY ALT TEXT"/>
+
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{lee2023fourierhandflow,
+    title={FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow},
+    author={Lee, Jihyun and Jang, Junbong and Kim, Donghwan and Sung, Minhyuk and Kim, Tae-Kyun},
+    booktitle={NeurIPS},
+    year={2023}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
