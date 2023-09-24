@@ -330,9 +330,9 @@ decoding.
       <h2 class="title is-3">Model Architecture</h2>
       <div class="content has-text-justified">
         <p>
-          We model a query flow by estimating the joint flow (blue upper branch) and the shape flow (pink lower branch).
-          Our joint flow network first predicts the Fourier coefficients for the flows of hand joint positions. The predicted joint flow is propagated to a query point via implicit linear
-          blend skinning. Our shape flow network then predicts the Fourier coefficients for the query-wise displacement flow w.r.t. the estimated joint flow. Our final query flow is computed as a sum of the pose and shape flows. Please check the paper for more details.
+          FourierHandFlow models a query flow by estimating the joint flow (blue upper branch) and the shape flow (pink lower branch).
+          The joint flow network first predicts the Fourier coefficients for the flow of hand joint positions. The predicted joint flow is propagated to each query point via implicit linear
+          blend skinning. The shape flow network then predicts the Fourier coefficients for query-wise displacement flow w.r.t. the estimated pose-depenedent flow. Please check the paper for more details.
         </p>
         <img src="data/fig_model.png" alt="MY ALT TEXT"/>
 
