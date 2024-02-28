@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="InterHandGen"/>
+  <meta property="og:description" content="InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion (CVPR 2024)"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="InterHandGen">
+  <meta name="twitter:description" content="InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion (CVPR 2024)">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>InterHandGen</title>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>"
+  />  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">🤝 InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jyunlee.github.io/" target="_blank">Jihyun Lee</a><sup>1</sup>,&nbsp;</span>
+                <span class="author-block">
+                  <a href="https://shunsukesaito.github.io/" target="_blank">Shunsuke Saito</a><sup>2</sup>,&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/view/gjnam" target="_blank">Giljoo Nam</a><sup>2</sup>,&nbsp;</span>
+                    <span class="author-block">
+                      <a href="https://mhsung.github.io/" target="_blank">Minhyuk Sung</a><sup>1</sup>,&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/view/tkkim/home" target="_blank">Tae-Kyun Kim</a><sup>1, 3</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">KAIST<sup>1</sup>,&nbsp;&nbsp; Codec Avatars Lab, Meta<sup>2</sup>, &nbsp;&nbsp;Imperial College London<sup>3</sup><br><b>CVPR 2024</b></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://jyunlee.github.io/interhandgen" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper (Coming Soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!--
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+                -->
+
+
+
+                  <!-- Github link -->
+
+                  <span class="link-block">
+                    <a href="https://github.com/jyunlee/InterHandGen" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!--
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="item">
+      <!-- Your image here -->
+      <video poster="" id="tree" muted loop autoplay="autoplay">
+        <source src="data/fig_teaser.mp4"
+        type="video/mp4">
+      </video>
+      <h4 class="subtitle has-text-centered">
+        🤝 <b>InterHandGen</b> generates two-hand interactions with or
+without an object using a novel cascaded diffusion. This generative prior can be incorporated into any optimization or learning methods to reduce ambiguity in an ill-posed setup.
+</h4>
+   </div>
+   <br><br>
+
+    <!-- <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+      </h2>
+    </div> -->
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present 🤝<b>InterHandGen</b>, a novel framework that learns the generative
+            prior of two-hand interaction. Sampling from our model yields plausible
+            and diverse two-hand shapes in close interaction with or without an object.
+            Our prior can be incorporated into any optimization or learning methods to
+            reduce ambiguity in an ill-posed setup. Our key observation is that directly modeling the joint
+            distribution of multiple instances imposes high learning complexity due to its combinatorial nature.
+            Thus, we propose to <b>decompose the modeling of joint distribution into the
+            modeling of factored unconditional and conditional single instance distribution</b>.
+            In particular, we introduce a diffusion model that learns the single-hand distribution
+            unconditional and conditional to another hand via conditioning dropout.
+            For sampling, we combine anti-penetration and classifier-free guidance to enable plausible generation.
+            Furthermore, we establish the rigorous evaluation protocol of two-hand synthesis, where our method significantly
+            outperforms baseline generative models in terms of plausibility and diversity.
+            We also demonstrate that our diffusion prior can boost the performance of two-hand reconstruction from
+            monocular in-the-wild images, achieving new state-of-the-art accuracy.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+      <h2 class="title is-3">🤲 Two-Hand Interaction Generation</h2>
+      <div class="content has-text-justified">
+        <p>
+          🤝<b>InterHandGen</b> can generate plausible and diverse two-hand interactions. Please also refer to the paper for quantitative comparisons with baselines, where we establish the rigorous evaluation protocol of two-hand synthesis.
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-40px;">
+        <div class="item item-video1">
+          <video poster="" id="video1" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_twohand-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_twohand-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">\
+            <!-- Your video file here -->
+            <source src="data/video_twohand-3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">⚾️ Two-Hand-Object Interaction Generation</h2>
+      <div class="content has-text-justified">
+        <p>
+          The leraning formulation of 🤝<b>InterHandGen</b> can be easily extended to object-conditioned two-hand interaction generation.
+          It is shown to model plausible and diverse bimanual hand-object interactions.
+
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-40px;">
+        <div class="item item-video1">
+          <video poster="" id="video1" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_twohandobj-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_twohandobj-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_twohandobj-3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">📸 In-the-Wild Two-Hand Reconstruction from RGB</h2>
+      <div class="content has-text-justified">
+        <p>
+          🤝 <b>InterHandGen</b> can be incorporated as a prior into any optimization or learning methods via Score Distillation Sampling-like loss.
+          It achieves new state-of-the-art reconstruction accuracy on two-hand reconstruction from in-the-wild images.
+      </div>
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-40px;" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="item item-video1">
+          <video poster="" id="video1" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_recon-1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_recon-2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_recon-3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/video_recon-4.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">🛠 Learning Formula and Architecture</h2>
+      <div class="content has-text-justified">
+        <p>
+          Our key observation is that directly modeling the joint distribution of multiple instances imposes high learning complexity due to its combinatorial nature.
+          Thus, we reformulate the two-hand distribution modeling into the modeling of factored single-hand model distribution unconditional and conditional to the other hand, such that
+          \(p_{\phi}(\mathbf{x}_{l}, \mathbf{x}_{r}) = p_{\phi}(\mathbf{x}_{l})\, p_{\phi}(\mathbf{x}_{r} | \mathbf{x}_{l}) \),
+          to reduce the dimensionality of each generation target.
+          After normalizing hand side, we jointly learn the resulting unconditional and conditional distributions via conditioning dropout using a single network.
+
+        </p>
+        <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-video1">
+            <img src="data/fig_arch-1.png">
+          </div>
+          <div class="item item-video2">
+              <img src="data/fig_arch-2.png">
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{lee2024interhandgen,
+    title={InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion},
+    author={Lee, Jihyun and Saito, Shunsuke and Nam, Giljoo and Sung, Minhyuk and Kim, Tae-Kyun},
+    booktitle={CVPR},
+    year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
