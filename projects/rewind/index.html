@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="REWIND"/>
+  <meta property="og:description" content="REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning (CVPR 2025)"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="REWIND">
+  <meta name="twitter:description" content="REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning (CVPR 2025)">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>REWIND</title>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚶‍♂️</text></svg>"
+  />  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">🕑🚶‍♂️REWIND</h1>
+            <h2 class="title is-4 publication-title" style="margin-top:-15px">Real-Time Egocentric Whole-Body Motion Diffusion<br>with Exemplar-Based Identity Conditioning</h2>
+
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jyunlee.github.io/" target="_blank">Jihyun Lee</a><sup>1, 2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="author-block">
+                  <a href="https://sites.google.com/view/xuweipeng/" target="_blank">Weipeng Xu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://alexanderrichard.github.io/" target="_blank">Alexander Richard</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span class="author-block">
+                      <a href="https://scholar.google.com.tw/citations?user=sFQD3k4AAAAJ" target="_blank">Shih-En Wei</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://shunsukesaito.github.io/" target="_blank">Shunsuke Saito</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  </span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <!-- Paper authors -->
+                    <span class="author-block">
+                        <span class="author-block">
+                          <a href="https://scholar.google.com/citations?user=DLVP3PcAAAAJ&hl=en" target="_blank">Shaojie Bai</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span class="author-block">
+                          <a href="https://jyunlee.github.io/rewind/" target="_blank">Te-Li Wang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span class="author-block">
+                          <a href="https://mhsung.github.io/" target="_blank">Minhyuk Sung</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span class="author-block">
+                          <a href="https://sites.google.com/view/tkkim/home" target="_blank">Tae-Kyun Kim</a><sup>2, 3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        <span class="author-block">
+                          <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ" target="_blank">Jason Saragih</a><sup>1</sup>
+                        </span>
+                        </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><b>Codec Avatars Lab, Meta<sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KAIST<sup>2</sup> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Imperial College London<sup>3</sup></b></span>
+                  </div>
+
+                  <div class="is-size-4 publication-authors" style="margin-top:-15px">
+                    <b><br>CVPR 2025</b></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2403.17422" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                      </span>
+                      
+                      <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="data/interhandgen.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supp</span>
+                    </a>
+                  </span>
+                    <!-- Video Link. -->
+                    <span class="link-block">
+                      <a href="https://youtu.be/sMEGyQKHr8c"
+                          class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                      <span>Video</span>
+                      </a>
+                    </span>
+                  <!-- Github link -->
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="item">
+      <!-- Your image here -->
+      <img src="data/teaser.png" alt="MY ALT TEXT"/>
+      <h4 class="subtitle has-text-centered">
+        🕑🚶‍♂️<b>REWIND</b> is a one-step diffusion model for whole-body motion tracking using head-mounted cameras. It is <u>real-time</u>, <u>causal</u>, and <u>generalizable to unseen motion lengths</u>, making it seamlessly applicable for driving photorealistic avatars or meshes.
+</h4>
+   </div>
+   <br><br>
+
+    <!-- <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+      </h2>
+    </div> -->
+  </div>
+</section>
+<!-- End teaser video -->
+
+    <!-- Paper video. -->
+    <section class="section hero is-light">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/sMEGyQKHr8c?si=SJGmG9HzFcmR1AmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--/ Paper video. -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-top:-15px">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present 🕑🚶‍♂️<b>REWIND</b> (<u>R</u>eal-Time <u>E</u>gocentric <u>W</u>hole-Body Mot<u>i</u>o<u>n</u> <u>D</u>iffusion), a one-step diffusion model for real-time, high-fidelity human motion estimation from egocentric image inputs. While an existing method for egocentric
+            whole-body (i.e., body and hands) motion estimation is non-real-time and acausal due to diffusion-based iterative motion refinement to capture correlations between body and hand poses, <b>REWIND</b> operates in a fully causal and real-time manner.
+            To enable real-time inference, we introduce
+            (1) cascaded body-hand denoising diffusion, which effectively models the correlation between egocentric body and
+            hand motions in a fast, feed-forward manner, and (2) diffusion distillation,
+            which enables high-quality motion estimation with a single denoising step.
+            Our denoising diffusion model is based on a modified Transformer architecture, designed to causally model output motions while enhancing generalizability to unseen motion lengths.
+            Additionally, <b>REWIND</b> optionally supports identity-conditioned
+            motion estimation when identity prior is available. To this
+            end, we propose a novel identity conditioning method based
+            on a small set of pose exemplars of the target identity, which
+            further enhances motion estimation quality. Through extensive experiments, we demonstrate that <b>REWIND</b> significantly outperforms the existing baselines both with and
+            without exemplar-based identity conditioning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <br>
+      <h2 class="title is-3"> 🎬 Results on ColossusEgo</h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>REWIND</b> estimates plausible motions even from challenging egocentric inputs (e.g., occluded or truncated observations). Especially, its reconstructed hand motions are highly expressive.
+          Note that these motions are estimated in real-time and in a fully causal manner (i.e., without relying on future information).
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-30px;">
+        <div class="item item-video1">
+          <video poster="" id="video1" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/colossusego_4.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video1">
+          <video poster="" id="video1" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/colossusego_6.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">\
+            <!-- Your video file here -->
+            <source src="data/colossusego_5.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video4">
+          <video poster="" id="video4" muted loop autoplay="autoplay" height="100%">\
+            <!-- Your video file here -->
+            <source src="data/colossusego_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video5">
+          <video poster="" id="video5" muted loop autoplay="autoplay" height="100%">\
+            <!-- Your video file here -->
+            <source src="data/colossusego_3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+      <h2 class="title is-3">🎬 Results on UnrealEgo</h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>REWIND</b> estimates significantly more accurate and natural motions than existing state-of-the-art methods.
+        </p>
+      </div>
+      <div id="results-carousel" class="carousel results-carousel" style="margin-top:-30px;">
+        <div class="item item-video1">
+          <video poster="" id="video1" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/unrealego_1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/unrealego_2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/unrealego_3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/unrealego_4.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" muted loop autoplay="autoplay" height="100%">
+            <!-- Your video file here -->
+            <source src="data/unrealego_5.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+	<div class="column is-four-fifths">
+      <h2 class="title is-3">🙎 Identity-Aware Egocentric Motion Estimation</h2>
+      <div class="content has-text-justified">
+        <p>
+          <b>REWIND</b> optionally supports identity-aware egocentric motion estimation to further enhance output motion quality. To this end, we propose novel exemplar-based identity conditioning, where the output motion style is conditioned on the target identity parameterized by a small set of pose exemplars. We empirically find this examplar-based identity paramerization is the most effective compared to existing identity parameterizations (e.g., height, bone lengths, shape parameters).
+        </p>
+        <img src="data/identity_aware.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+<br>
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+	<div class="column is-four-fifths">
+      <h2 class="title is-3">🛠 Pipeline Overview</h2>
+      <div class="content has-text-justified">
+        <p>
+          Given a sequence of stereo egocentric images and camera poses, <b>REWIND</b> first estimates 3D body motion and then estimates 3D hand motion conditioned on the 3D upper body motion via one-step denoising diffusion. The motion estimation can be optionally conditioned on the exemplar-based identity prior to further enhance the output motion quality. Through an optional inverse kinematics step, the tracking results can be seamlessly used to drive meshes or photorealistic avatars in real time.
+        </p>
+        <img src="data/fig_pipeline.png" alt="MY ALT TEXT"/>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{lee2025rewind,
+    title={REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning},
+    author={Lee, Jihyun and Xu, Weipeng and Richard, Alexander and Wei, Shih-En and Saito, Shunsuke and Bai, Shaojie and Wang, Te-Li and Sung, Minhyuk and Kim, Tae-Kyun and Saragih, Jason},
+    booktitle={CVPR},
+    year={2025}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
