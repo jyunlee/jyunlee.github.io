@@ -1,576 +1,367 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
-
-  <meta name="author" content="Jihyun Lee">
-  <meta name="description" content="Ph.D.">
-  <link rel="alternate" hreflang="en-us" href="/">
-  <meta name="theme-color" content="#2962ff">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  <link rel="stylesheet" href="/css/academic.css">
-  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Jihyun Lee">
-  <link rel="manifest" href="/index.webmanifest">
-
-  <link rel="canonical" href="/">
-  <meta property="twitter:card" content="summary">
-  <meta property="og:site_name" content="Jihyun Lee">
-  <meta property="og:url" content="/">
-  <meta property="og:title" content="Jihyun Lee">
-  <meta property="og:description" content="Postdoctoral Research Scientist at Meta"><meta property="og:image" content="img/map[gravatar:%!s(bool=false) shape:circle]">
-  <meta property="twitter:image" content="img/map[gravatar:%!s(bool=false) shape:circle]"><meta property="og:locale" content="en-us">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  },
-  "url": "/"
-}
-</script>
   <title>Jihyun Lee</title>
+  <meta name="author" content="Jihyun Lee">
+  <meta name="description" content="Postdoctoral AI Research Scientist at Meta (Codec Avatars Lab)">
 
+  <meta property="og:site_name" content="Jihyun Lee">
+  <meta property="og:title" content="Jihyun Lee">
+  <meta property="og:description" content="Postdoctoral AI Research Scientist at Meta (Codec Avatars Lab)">
+  <meta property="og:type" content="website">
+  <meta property="twitter:card" content="summary">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
 </head>
+<body>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main" >
-
-  <aside class="search-results" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
-        </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
-
-      <div id="search-box">
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
-      </div>
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Jihyun Lee</a>
-    </div>
-
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Jihyun Lee</a>
-    </div>
-
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-      <ul class="navbar-nav d-md-inline-flex">
-        <li class="nav-item">
-          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#papers" data-target="#papers"><span>Publications</span></a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#awards" data-target="#awards"><span>Awards &amp; Honors</span></a>
-        </li>
-
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#activities" data-target="#activities"><span>Activities</span></a>
-        </li>
-
-
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="/" class="navbar-name">Jihyun Lee</a>
+    <ul class="navbar-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#awards">Awards</a></li>
     </ul>
-
   </div>
 </nav>
 
+<div class="container">
 
-<span class="js-widget-page d-none"></span>
-
-  <section id="about" class="home-section wg-about   " style="padding: 30px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-  <div class="col-12 col-lg-4">
-    <div id="profile">
-      <img class="avatar avatar-circle" src="/resources/profile.jpeg" alt="Avatar">
-      <div class="portrait-title">
-        <h2>Jihyun Lee</h2>
+  <!-- About -->
+  <section id="about" class="profile-section">
+    <div class="profile-card">
+      <div class="profile-photo-wrapper">
+        <img class="profile-photo" src="/resources/profile.jpeg" alt="Jihyun Lee">
       </div>
-      <a href="resources/cv.pdf"><b>CV</b></a>
-        | <a href="https://scholar.google.com/citations?user=UaMiOq8AAAAJ&hl=en"><b>Google Scholar</b></a>
-        | <a href="https://github.com/jyunlee"><b>GitHub</b></a> <br>
-         <a href="https://www.linkedin.com/in/jihyun-lee-b51861238/"><b>LinkedIn</b></a>
-        | <a href="https://x.com/jyun_leee"><b>X</b></a>
-      <br>
-      <br>
-      </td>
-    </div>
-  </div>
-  <div class="col-12 col-lg-8">
+      <div class="profile-info">
+        <h1>Jihyun Lee</h1>
+        <p class="tagline">Postdoctoral AI Research Scientist at <img src="/resources/meta-icon.svg" alt="Meta" class="inline-logo"> Meta (Codec Avatars Lab)</p>
+        <p class="bio">
+          Hello! I am a Postdoctoral AI Research Scientist at Meta (Codec Avatars Lab), where I am fortunate to work with <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a> and <a href="https://sofienbouaziz.com/">Sofien Bouaziz</a>. Previously, I obtained my Ph.D. at <a href="https://kaist.ac.kr/">KAIST</a> advised by <a href="https://sites.google.com/view/tkkim/home">Tae-Kyun (T-K) Kim</a> and <a href="https://mhsung.github.io/">Minhyuk Sung</a>. I visited <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a> as a research scientist intern in 2024, hosted by <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en">Jason Saragih</a>.
+        </p>
+        <p class="bio">
+          My research aims to enable artificial intelligence to visually understand and simulate human behavior, including interactions with the surrounding environment. Recently, I have been focusing on hand interaction reconstruction and generation.
+        </p>
 
-  <br>
-  <p>Hello! 👋 I am a Postdoctoral AI Research Scientist at Meta (Codec Avatars Lab), where I am fortunate to work with <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a>. Previously, I obtained my Ph.D. at <a href="https://kaist.ac.kr/">KAIST</a> advised by <a href="https://sites.google.com/view/tkkim/home">Tae-Kyun (T-K) Kim</a> and <a href="https://mhsung.github.io/">Minhyuk Sung</a>. In 2024, I visited <a href="https://about.meta.com/realitylabs/">Meta Reality Labs</a> as a research scientist intern, hosted by <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ&hl=en">Jason Saragih</a>.
-  
-  <p>The goal of my research is to enable artificial intelligence to visually understand and simulate ourselves and our interactions with the environment. Lately, my focus has been on reconstructing and generating hand interactions, but my research interests are not limited to that. 🙂
-	  <!--<p>I obtained my Bachelor's degree in Computer Science at <a href="https://www.handong.edu/eng/">Handong Global University</a> with Summa Cum Laude and early graduation. I also have a memorable experience of attending <a href="https://www.lsnepal.com/">an American international high school in Nepal</a>, where I learned the value of cross-cultural skills and teamwork. Besides research, I am also interested in music composition and arrangement.</p> -->
-    <div class="row">
-
-      <div class="col-md-5">
-        <h3>Contact</h3>
-        <ul class="ul-contact fa-ul">
-          <li>
-            <i class="fa-li fas fa-envelope"></i>
-            <div class="description">
-              <p class="course">jihyunlee [at] meta.com</p>
-            </div>
-          </li>
-        </ul>
-        </ul>
-      </div>
-
-      <div class="col-md-7">
-        <h3>Education</h3>
-        <ul class="ul-edu fa-ul">
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">Integrated Master's &amp; Ph.D in Computer Science, KAIST</p>
-              <p class="institution">Sep. 2020 - Aug. 2025</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
-  </section>
-
-
-<section id="news" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-    <div class="col-lg-12">
-      <h1>News</h1>
-<ul>
-  <li><b>Sep 2025:</b>  I joined Meta as a Postdoctoral AI Research Scientist. </li>
-  <li><b>Sep 2025:</b>  <a href="https://kaistchangmin.github.io/MPMAvatar/">MPMAvatar</a> and <a href="https://origen2025.github.io/">ORIGEN</a> are accepted to NeurIPS 2025. Both papers were led by talented new MSc students, whom I helped as a mentor. </li>
-	<li><b>Aug 2025:</b>  I’ll be giving an invited talk at the <a href="https://hands-workshop.org/workshop2025.html">HANDS Workshop</a> at ICCV 2025. Thank you to the workshop organizers for this great opportunity!</li>
-  <li><b>Jul 2025:</b>  I’ll be giving a talk at the Doctoral Consortium and presenting an invited poster on <a href="https://jyunlee.github.io/projects/rewind/">REWIND</a> at the <a href="https://kcvs.kr/?act=info.workshop&pseq=8">KCCV 2025</a>.</li>
-  <li><b>Jul 2025:</b>  <a href="https://tkhkaeio.github.io/projects/25-scgen/index.html">SCGen</a> is accepted to ICCV 2025. Congratulations to the lead author, <a href="https://tkhkaeio.github.io/">Take</a>!</li>
-  <li><b>Jun 2025:</b>  I’m attending CVPR 2025 to present my recent work, <a href="https://jyunlee.github.io/projects/rewind/">REWIND</a>, done during my internship at Meta. I’ll also be presenting an invited poster at the <a href="https://egovis.github.io/cvpr25/#">EgoVis Workshop</a>.</li>
-	<li><b>Jun 2025:</b>  Successfully defended my Ph.D.! 🎓 I sincerely thank <a href="https://sites.google.com/view/tkkim/home">Prof. Tae-Kyun Kim</a>, <a href="https://mhsung.github.io/">Prof. Minhyuk Sung</a>, <a href="https://maga33.github.io/">Prof. Seunghoon Hong</a>, <a href="https://jhugestar.github.io/">Prof. Hanbyul Joo</a>, and <a href="https://www.vcai.korea.ac.kr/members/principal-investigator">Prof. Gyeongsik Moon</a> for serving on my thesis committee.
-Please stay tuned for what’s next!</li>
-
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-
-  <section id="papers" class="home-section wg-papers   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-
-    <div class="col-lg-12">
-      <h1>Publications</h1>
-    </div>
-    <div class="row">
-        <ul class="ul-papers">
-		* Full publication list (including domestic publications) is available in my <a href="resources/cv.pdf">CV</a>.
-
-
-          <li>
-                <div class="img">
-                  <img src="/resources/paper/mpmavatar.png" class="img-responsive" alt="">
-                </div>
-              <div class="description">
-                <p class="title">MPMAvatar: Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics</p>
-    	    <p class="authors">Changmin Lee, <b>Jihyun Lee</b>, Tae-Kyun Kim<br/></p>
-    	    <p class="venue">NeurIPS 2025<br>
-                <p class="resources">
-    	    <a href="https://kaistchangmin.github.io/MPMAvatar/">[Project]</a> <a href="https://arxiv.org/pdf/2510.01619">[Paper]</a> <a href="https://github.com/KAISTChangmin/MPMAvatar">[Code]</a>
-
-          <li>
-                <div class="img">
-                  <img src="/resources/paper/origen.png" class="img-responsive" alt="">
-                </div>
-              <div class="description">
-                <p class="title">ORIGEN: Zero-Shot 3D Orientation Grounding in Text-to-Image Generation</p>
-    	    <p class="authors">Yunhong Min*, Daehyeon Choi*, Kyeongmin Yeo, <b>Jihyun Lee</b>, Minhyuk Sung (* equal contributions)<br/></p>
-    	    <p class="venue">NeurIPS 2025<br>
-                <p class="resources">
-    	    <a href="https://origen2025.github.io/">[Project]</a> <a href="https://arxiv.org/pdf/2503.22194">[Paper]</a> <a href="https://github.com/KAIST-Visual-AI-Group/ORIGEN">[Code]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/scgen.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Generative Modeling of Shape-Dependent Self-Contact Human Poses</p>
-	    <p class="authors">Takehiko Ohkawa, <b>Jihyun Lee</b>, Shunsuke Saito, Jason Saragih, Fabian Prada, Yichen Xu, Shoou-I Yu, Ryosuke Furuta,</p>
-	    <p class="authors">Yoichi Sato, Takaaki Shiratori</p>
-      <p class="venue">ICCV 2025<br>
-            <p class="resources">
-	    <a href="https://tkhkaeio.github.io/projects/25-scgen/index.html">[Project]</a> <a href="https://arxiv.org/pdf/2509.23393">[Paper]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/afford-prior.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Affordance-Guided Diffusion Prior for 3D Hand Reconstruction</p>
-	    <p class="authors">Naru Suzuki, Takehiko Ohkawa, Tatsuro Banno, <b>Jihyun Lee</b>, Ryosuke Furuta, Yoichi Sato</p>
-      <p class="venue">ICCVW 2025<br>
-            <p class="resources">
-	    <a href="https://arxiv.org/pdf/2510.00506">[Paper]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/rewind.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning</p>
-	    <p class="authors"><b>Jihyun Lee</b>, Weipeng Xu, Alexander Richard, Shih-En Wei, Shunsuke Saito, Shaojie Bai, Te-Li Wang, Minhyuk Sung,</p>
-      <p class="authors">Tae-Kyun Kim, Jason Saragih<br/></p>
-	    <p class="venue">CVPR 2025<br>
-            <p class="resources">
-	    <a href="https://jyunlee.github.io/projects/rewind/">[Project]</a> <a href="https://arxiv.org/pdf/2504.04956">[Paper]</a>
-
-
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/graspnet.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics</p>
-	    <p class="authors">Woojin Cho, <b>Jihyun Lee</b>, Minjae Yi, Minje Kim, Taeyun Woo, Donghwan Kim, Taewook Ha, Hyokeun Lee, Je-Hwan Ryu,<p>
-	    <p class="authors">Woontack Woo, Tae-Kyun Kim<br/></p>
-	    <p class="venue">ECCV 2024<br>
-            <p class="resources">
-	    <a href="https://hograspnet2024.github.io">[Project]</a> <a href="https://www.arxiv.org/pdf/2409.04033">[Paper]</a> <a href="https://github.com/kaist-uvr-lab/HOGraspNet">[Code]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/interhandgen.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion</p>
-            <p class="authors"><b>Jihyun Lee</b>, Shunsuke Saito, Giljoo Nam, Minhyuk Sung, Tae-Kyun Kim<br/></p>
-	    <p class="venue">CVPR 2024<br>
-            <p class="resources">
-	    <a href="https://jyunlee.github.io/projects/interhandgen/">[Project]</a>  <a href="https://arxiv.org/pdf/2403.17422.pdf">[Paper]</a> <a href="https://github.com/jyunlee/InterHandGen">[Code]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/fourier-hand-flow.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow</p>
-            <p class="authors"><b>Jihyun Lee</b>, Junbong Jang, Donghwan Kim, Minhyuk Sung, Tae-Kyun Kim<br/></p>
-	    <p class="venue">NeurIPS 2023<br>
-            <p class="resources">
-	    <a href="https://jyunlee.github.io/projects/fourier-hand-flow/">[Project]</a> <a href="https://arxiv.org/pdf/2307.08100.pdf">[Paper]</a> <a href="https://github.com/jyunlee/FourierHandFlow">[Code]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/im2hands.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Im2Hands: Learning Attentive Implicit Representation of Interacting Two-Hand Shapes</p>
-            <p class="authors"><b>Jihyun Lee</b>, Minhyuk Sung, Honggyu Choi, Tae-Kyun Kim<br/></p>
-	    <p class="venue">CVPR 2023<br>
-            <p class="resources">
-	    <a href="https://jyunlee.github.io/projects/implicit-two-hands/">[Project]</a> <a href="https://arxiv.org/pdf/2302.14348.pdf">[Paper]</a> <a href="https://github.com/jyunlee/Im2Hands">[Code]</a> <a href="https://youtu.be/hBSeN222Um4">[Presentation]</a> <a href="https://jyunlee.github.io/projects/implicit-two-hands/data/cvpr2023_poster.pdf" class="image fit" type="application/pdf">[Poster]</a>
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/ckd-ad.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Contrastive Knowledge Distillation for Anomaly Detection in Multi-Illumination/Focus Display Images</p>
-            <p class="authors">Hangil Park*, <b>Jihyun Lee</b>*, Yongmin Seo, Taewon Min, Joodong Yun, Jaewon Kim, Tae-Kyun Kim (* equal contributions)<br/></p>
-	    <p class="venue">MVA 2023 (oral)<br>
-	    <span style="font-weight:normal"><i>Writen as a report of an industrial research project with Samsung Display</i></p>
-            <p class="resources">
-	    <a href="https://www.ieice.org/publications/proceedings/summary.php?expandable=13&iconf=MVA&session_num=O1-1&number=O1-1-2&year=2023">[Paper]</a>
-
-
-        <li>
-            <div class="img">
-              <img src="/resources/paper/pop-out-motion.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Pop-Out Motion: 3D-Aware Image Deformation via Learning Shape Laplacian</p>
-            <p class="authors"><b>Jihyun Lee</b>*, Minhyuk Sung*, Hyunjin Kim, Tae-Kyun Kim (* equal contributions)<br/></p>
-            <p class="venue">CVPR 2022<br>
-            <p class="resources">
-	    <a href="https://jyunlee.github.io/projects/pop-out-motion/">[Project]</a> <a href="https://arxiv.org/pdf/2203.15235.pdf">[Paper]</a> <a href="https://github.com/jyunlee/Pop-Out-Motion">[Code]</a> <a href="https://youtu.be/Nix4m6W6AW0">[Presentation]</a> <a href="https://jyunlee.github.io/projects/pop-out-motion/data/cvpr2022_poster.pdf" class="image fit" type="application/pdf">[Poster]</a>
-
-            </p>
-          </div>
-        </li>
-        <li>
-            <div class="img">
-              <img src="/resources/paper/rgbd-face-parsing.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Face Parsing from RGB and Depth Using Cross-Domain Mutual Learning</p>
-            <p class="authors"><b>Jihyun Lee</b>, Binod Bhattarai, Tae-Kyun Kim<br/></p>
-            <p class="venue">CVPRW 2021 (oral) - IEEE AMFG acceptance rate: 27%<br>
-            <p class="resources">
-	    <a href="https://openaccess.thecvf.com/content/CVPR2021W/AMFG/papers/Lee_Face_Parsing_From_RGB_and_Depth_Using_Cross-Domain_Mutual_Learning_CVPRW_2021_paper.pdf">[Paper]</a> <a href="https://github.com/jyunlee/CelebAMask-HQ-D_LaPa-D_Helen-D">[Dataset]</a>
-
-            </p>
-          </div>
-        </li>
-        <li>
-            <div class="img">
-              <img src="/resources/paper/fast-dctts.png" class="img-responsive" alt="">
-            </div>
-          <div class="description">
-            <p class="title">Fast DCTTS: Efficient Deep Convolutional Text-to-Speech</p>
-            <p class="authors">Minsu Kang, <b>Jihyun Lee</b>, Simin Kim, Injung Kim<br/></p>
-            <p class="venue">ICASSP 2021<br>
-            <p class="resources">
-	    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9413373">[Paper]</a>
-            </p>
-          </div>
-        </li>
-
-
-        </ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-<section id="awards" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-	<div class="col-lg-12">
-      <h1>Awards &amp; Honors</h1>
-<ul>
-	<li style="line-height:150%"><b>Outstanding Reviewer 2024, ECCV</b></li>
-	<li style="line-height:150%"><b>Outstanding TA Award 2022, KAIST</b></li>
-	- <i>Awarded to TAs who earned the highest ratings on KAIST CS student survey</i>
-	<li><b>Excellence Award <span style="color:#BB2222">(Mayoral Award)</span> at Korea Software Convergence Hackathon 2019, Ministry of Science and ICT of Korea</b></li>
-	- <i>Developed an automatic traffic light control system based on reinforcement learning</i>
-	<li><b>Honorable Mention Award at Undergraduate Student Paper Competition 2019, Korea Software Congress (KSC) and Korea Computer Congress (KCC)</b></li>
-	- <i>Proposed a method to reduce the blocking effects of DCT-based X-ray grid line suppression techniques</i>
-	<li><b>Silver Prize at Undergraduate Student Paper Competition 2018, Korea Information Processing Society (KIPS)</b></li>
-	- <i>Proposed a DCT-based X-ray grid line suppression method using dynamic segmentation</i>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-
-<section id="activities" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-    <div class="col-lg-12">
-      <h1>Academic Activities</h1>
-      <h2 id="reviewer">Reviewer</h2>
-<ul>
-	<li>CVPR, CVPR Workshops</li>
-	<li>NeurIPS</li>
-	<li>ICCV</li>
-	<li>ECCV</li>
-	<li>ICML</li>
-	<li>AAAI</li>
-	<li>IJCV</li>
-	<li>Pacific Graphics</li>
-	<li>Image and Vision Computing (Elsevier Journal)</li>
-
-</ul>
-      <h2 id="reviewer">Student Organizer</h2>
-<ul>
-	<li><a href="https://research.google/outreach/explore-csr/">Google exploreCSR</a> Workshops @ KAIST</li>
-
-</ul>
-
-    </div>
-</div>
-    </div>
-  </section>
-
-  <section id="teachinig_experiences" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-    <div class="col-lg-12" style="line-height: 180% !important;">
-      <h1>Teaching Experiences</h1>
-<ul>
-	<li>Teaching Assistant, Artificial Intelligence and Machine Learning, 2021-2023, KAIST</li>
-	<li>Teaching Assistant, Machine Learning for Computer Vision, 2021-2022, KAIST</li>
-	<li>Teaching Assistant, Operating System, 2020, Handong Global University</li>
-	<li>Teaching Assistant, C++ Programming, 2019, Handong Global University</li>
-	<li>Teaching Assistant, Data Structure, 2018, Handong Global University</li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
-
-
-
-<!--
-  <section id="scholarships" class="home-section wg-blank   " style="padding: 20px 0 20px 0;" >
-    <div class="container">
-
-<div class="row">
-    <div class="col-lg-12">
-      <h1>Scholarships (Selected)</h1>
-<ul>
-	<li>National Science and Technology Scholarship (full tuition), Ministry of Science and ICT of Korea <i>2019 - Current</i></li>
-	<li>Academic Excellence Scholarship, Handong Global University <i>2017 - 2020</i></li>
-</ul>
-    </div>
-</div>
-    </div>
-  </section>
--->
-
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-
-
-    <script>const code_highlighting = false;</script>
-    <script>const isSiteThemeDark = false;</script>
-
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
+        <div class="profile-links">
+          <a href="mailto:jihyunlee@meta.com"><i class="fas fa-envelope"></i> Email</a>
+          <a href="resources/cv.pdf"><i class="fas fa-file-alt"></i> CV</a>
+          <a href="https://scholar.google.com/citations?user=UaMiOq8AAAAJ&hl=en"><i class="ai ai-google-scholar"></i> Scholar</a>
+          <a href="https://github.com/jyunlee"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/jihyun-lee-b51861238/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="https://x.com/jyun_leee"><i class="fab fa-x-twitter"></i> X</a>
         </div>
       </div>
-      </div>
-    </script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-
-    <script src="/js/academic.min.a8d7005002cb4a052fd6d721e83df9ba.js"></script>
-
-
-
-  <div class="container">
-    <footer class="site-footer">
-
-
-  <p class="powered-by">
-
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-
-  </p>
-</footer>
-
-  </div>
-
-
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
     </div>
-  </div>
+  </section>
+
+  <!-- News -->
+  <section id="news" class="section">
+    <h2 class="section-title">News</h2>
+    <ul class="news-list">
+      <li><span class="news-date">Mar 2026</span><span class="news-content"><a href="https://junxuan-li.github.io/lca/">LCA</a> is accepted to CVPR 2026.</span></li>
+      <li><span class="news-date">Sep 2025</span><span class="news-content">I joined Meta as a Postdoctoral AI Research Scientist.</span></li>
+      <li><span class="news-date">Sep 2025</span><span class="news-content"><a href="https://kaistchangmin.github.io/MPMAvatar/">MPMAvatar</a> and <a href="https://origen2025.github.io/">ORIGEN</a> are accepted to NeurIPS 2025. Both papers were led by new MSc students, whom I helped as a mentor.</span></li>
+      <li><span class="news-date">Aug 2025</span><span class="news-content">I'll be giving an invited talk at the <a href="https://hands-workshop.org/workshop2025.html">HANDS Workshop</a> @ ICCV 2025.</span></li>
+      <li><span class="news-date">Jul 2025</span><span class="news-content">I'll be giving a talk at the Doctoral Consortium and presenting an invited poster on <a href="https://jyunlee.github.io/projects/rewind/">REWIND</a> at the <a href="https://kcvs.kr/?act=info.workshop&pseq=8">KCCV 2025</a>.</span></li>
+      <li><span class="news-date">Jul 2025</span><span class="news-content"><a href="https://tkhkaeio.github.io/projects/25-scgen/index.html">SCGen</a> is accepted to ICCV 2025. Congratulations to the lead author, <a href="https://tkhkaeio.github.io/">Take</a>!</span></li>
+      <li><span class="news-date">Jun 2025</span><span class="news-content">I'm attending CVPR 2025 to present <a href="https://jyunlee.github.io/projects/rewind/">REWIND</a>. I'll also be presenting an invited poster at the <a href="https://egovis.github.io/cvpr25/#">EgoVis Workshop</a>.</span></li>
+      <li><span class="news-date">Jun 2025</span><span class="news-content">Successfully defended my Ph.D.! I sincerely thank <a href="https://sites.google.com/view/tkkim/home">Prof. Tae-Kyun Kim</a>, <a href="https://mhsung.github.io/">Prof. Minhyuk Sung</a>, <a href="https://maga33.github.io/">Prof. Seunghoon Hong</a>, <a href="https://jhugestar.github.io/">Prof. Hanbyul Joo</a>, and <a href="https://www.vcai.korea.ac.kr/members/principal-investigator">Prof. Gyeongsik Moon</a> for serving on my thesis committee.</span></li>
+    </ul>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section">
+    <h2 class="section-title">Publications</h2>
+    <p class="pub-note">* Full publication list is available in my <a href="resources/cv.pdf">CV</a>.</p>
+
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/lca.jpg" alt="LCA">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Large-Scale Codec Avatars: The Unreasonable Effectiveness of Large-scale Avatar Pretraining</div>
+          <div class="pub-authors">Large-Scale Codec Avatars Team, Meta</div>
+          <div class="pub-venue">CVPR 2026</div>
+          <div class="pub-links">
+            <a href="https://junxuan-li.github.io/lca/">Project</a>
+            <a href="https://arxiv.org/pdf/2604.02320">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/mpmavatar.png" alt="MPMAvatar">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">MPMAvatar: Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics</div>
+          <div class="pub-authors">Changmin Lee, <strong>Jihyun Lee</strong>, Tae-Kyun Kim</div>
+          <div class="pub-venue">NeurIPS 2025</div>
+          <div class="pub-desc">Mentored the lead student's first MSc research project</div>
+          <div class="pub-links">
+            <a href="https://kaistchangmin.github.io/MPMAvatar/">Project</a>
+            <a href="https://arxiv.org/pdf/2510.01619">Paper</a>
+            <a href="https://github.com/KAISTChangmin/MPMAvatar">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/origen.png" alt="ORIGEN">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">ORIGEN: Zero-Shot 3D Orientation Grounding in Text-to-Image Generation</div>
+          <div class="pub-authors">Yunhong Min*, Daehyeon Choi*, Kyeongmin Yeo, <strong>Jihyun Lee</strong>, Minhyuk Sung (* equal contributions)</div>
+          <div class="pub-venue">NeurIPS 2025</div>
+          <div class="pub-desc">Mentored the lead student's first MSc research project</div>
+          <div class="pub-links">
+            <a href="https://origen2025.github.io/">Project</a>
+            <a href="https://arxiv.org/pdf/2503.22194">Paper</a>
+            <a href="https://github.com/KAIST-Visual-AI-Group/ORIGEN">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/scgen.png" alt="SCGen">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Generative Modeling of Shape-Dependent Self-Contact Human Poses</div>
+          <div class="pub-authors">Takehiko Ohkawa, <strong>Jihyun Lee</strong>, Shunsuke Saito, Jason Saragih, Fabian Prada, Yichen Xu, Shoou-I Yu, Ryosuke Furuta, Yoichi Sato, Takaaki Shiratori</div>
+          <div class="pub-venue">ICCV 2025</div>
+          <div class="pub-links">
+            <a href="https://tkhkaeio.github.io/projects/25-scgen/index.html">Project</a>
+            <a href="https://arxiv.org/pdf/2509.23393">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/afford-prior.png" alt="Affordance-Guided Diffusion Prior">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Affordance-Guided Diffusion Prior for 3D Hand Reconstruction</div>
+          <div class="pub-authors">Naru Suzuki, Takehiko Ohkawa, Tatsuro Banno, <strong>Jihyun Lee</strong>, Ryosuke Furuta, Yoichi Sato</div>
+          <div class="pub-venue">ICCVW 2025</div>
+          <div class="pub-links">
+            <a href="https://arxiv.org/pdf/2510.00506">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/rewind.png" alt="REWIND">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning</div>
+          <div class="pub-authors"><strong>Jihyun Lee</strong>, Weipeng Xu, Alexander Richard, Shih-En Wei, Shunsuke Saito, Shaojie Bai, Te-Li Wang, Minhyuk Sung, Tae-Kyun Kim, Jason Saragih</div>
+          <div class="pub-venue">CVPR 2025</div>
+          <div class="pub-links">
+            <a href="https://jyunlee.github.io/projects/rewind/">Project</a>
+            <a href="https://arxiv.org/pdf/2504.04956">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/graspnet.png" alt="HO GraspNet">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics</div>
+          <div class="pub-authors">Woojin Cho, <strong>Jihyun Lee</strong>, Minjae Yi, Minje Kim, Taeyun Woo, Donghwan Kim, Taewook Ha, Hyokeun Lee, Je-Hwan Ryu, Woontack Woo, Tae-Kyun Kim</div>
+          <div class="pub-venue">ECCV 2024</div>
+          <div class="pub-links">
+            <a href="https://hograspnet2024.github.io">Project</a>
+            <a href="https://www.arxiv.org/pdf/2409.04033">Paper</a>
+            <a href="https://github.com/kaist-uvr-lab/HOGraspNet">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/interhandgen.png" alt="InterHandGen">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion</div>
+          <div class="pub-authors"><strong>Jihyun Lee</strong>, Shunsuke Saito, Giljoo Nam, Minhyuk Sung, Tae-Kyun Kim</div>
+          <div class="pub-venue">CVPR 2024</div>
+          <div class="pub-links">
+            <a href="https://jyunlee.github.io/projects/interhandgen/">Project</a>
+            <a href="https://arxiv.org/pdf/2403.17422.pdf">Paper</a>
+            <a href="https://github.com/jyunlee/InterHandGen">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/fourier-hand-flow.png" alt="FourierHandFlow">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow</div>
+          <div class="pub-authors"><strong>Jihyun Lee</strong>, Junbong Jang, Donghwan Kim, Minhyuk Sung, Tae-Kyun Kim</div>
+          <div class="pub-venue">NeurIPS 2023</div>
+          <div class="pub-links">
+            <a href="https://jyunlee.github.io/projects/fourier-hand-flow/">Project</a>
+            <a href="https://arxiv.org/pdf/2307.08100.pdf">Paper</a>
+            <a href="https://github.com/jyunlee/FourierHandFlow">Code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/im2hands.png" alt="Im2Hands">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Im2Hands: Learning Attentive Implicit Representation of Interacting Two-Hand Shapes</div>
+          <div class="pub-authors"><strong>Jihyun Lee</strong>, Minhyuk Sung, Honggyu Choi, Tae-Kyun Kim</div>
+          <div class="pub-venue">CVPR 2023</div>
+          <div class="pub-links">
+            <a href="https://jyunlee.github.io/projects/implicit-two-hands/">Project</a>
+            <a href="https://arxiv.org/pdf/2302.14348.pdf">Paper</a>
+            <a href="https://github.com/jyunlee/Im2Hands">Code</a>
+            <a href="https://youtu.be/hBSeN222Um4">Presentation</a>
+            <a href="https://jyunlee.github.io/projects/implicit-two-hands/data/cvpr2023_poster.pdf">Poster</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/ckd-ad.png" alt="CKD-AD">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Contrastive Knowledge Distillation for Anomaly Detection in Multi-Illumination/Focus Display Images</div>
+          <div class="pub-authors">Hangil Park*, <strong>Jihyun Lee</strong>*, Yongmin Seo, Taewon Min, Joodong Yun, Jaewon Kim, Tae-Kyun Kim (* equal contributions)</div>
+          <div class="pub-venue">MVA 2023 (oral)</div>
+          <div class="pub-links">
+            <a href="https://www.ieice.org/publications/proceedings/summary.php?expandable=13&iconf=MVA&session_num=O1-1&number=O1-1-2&year=2023">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/pop-out-motion.png" alt="Pop-Out Motion">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Pop-Out Motion: 3D-Aware Image Deformation via Learning Shape Laplacian</div>
+          <div class="pub-authors"><strong>Jihyun Lee</strong>*, Minhyuk Sung*, Hyunjin Kim, Tae-Kyun Kim (* equal contributions)</div>
+          <div class="pub-venue">CVPR 2022</div>
+          <div class="pub-links">
+            <a href="https://jyunlee.github.io/projects/pop-out-motion/">Project</a>
+            <a href="https://arxiv.org/pdf/2203.15235.pdf">Paper</a>
+            <a href="https://github.com/jyunlee/Pop-Out-Motion">Code</a>
+            <a href="https://youtu.be/Nix4m6W6AW0">Presentation</a>
+            <a href="https://jyunlee.github.io/projects/pop-out-motion/data/cvpr2022_poster.pdf">Poster</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/rgbd-face-parsing.png" alt="Face Parsing">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Face Parsing from RGB and Depth Using Cross-Domain Mutual Learning</div>
+          <div class="pub-authors"><strong>Jihyun Lee</strong>, Binod Bhattarai, Tae-Kyun Kim</div>
+          <div class="pub-venue">CVPRW 2021 (oral)</div>
+          <div class="pub-links">
+            <a href="https://openaccess.thecvf.com/content/CVPR2021W/AMFG/papers/Lee_Face_Parsing_From_RGB_and_Depth_Using_Cross-Domain_Mutual_Learning_CVPRW_2021_paper.pdf">Paper</a>
+            <a href="https://github.com/jyunlee/CelebAMask-HQ-D_LaPa-D_Helen-D">Dataset</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-img">
+          <img src="/resources/paper/fast-dctts.png" alt="Fast DCTTS">
+        </div>
+        <div class="pub-details">
+          <div class="pub-title">Fast DCTTS: Efficient Deep Convolutional Text-to-Speech</div>
+          <div class="pub-authors">Minsu Kang, <strong>Jihyun Lee</strong>, Simin Kim, Injung Kim</div>
+          <div class="pub-venue">ICASSP 2021</div>
+          <div class="pub-links">
+            <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9413373">Paper</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Academic Activities -->
+  <section id="activities" class="section">
+    <h2 class="section-title">Academic Activities</h2>
+
+    <h3 class="subsection-title">Reviewer</h3>
+    <ul class="simple-list">
+      <li>Computer Vision: CVPR, ICCV, ECCV, IJCV, etc.</li>
+      <li>Machine Learning: ICLR, NeurIPS, ICML, AAAI</li>
+      <li>Computer Graphics: SIGGRAPH, PG</li>
+    </ul>
+
+    <h3 class="subsection-title">Invited Talk</h3>
+    <ul class="simple-list">
+      <li><a href="https://hands-workshop.org/workshop2025.html">HANDS Workshop</a> @ ICCV 2025</li>
+    </ul>
+
+    <h3 class="subsection-title">Student Organizer</h3>
+    <ul class="simple-list">
+      <li><a href="https://research.google/outreach/explore-csr/">Google exploreCSR</a> Workshops @ KAIST</li>
+    </ul>
+  </section>
+
+  <!-- Awards & Honors -->
+  <section id="awards" class="section">
+    <h2 class="section-title">Awards &amp; Honors</h2>
+    <ul class="awards-list">
+      <li>
+        <div class="award-title">Outstanding Reviewer 2024, ECCV</div>
+      </li>
+      <li>
+        <div class="award-title">Outstanding TA Award 2022, KAIST</div>
+        <div class="award-desc">Awarded to TAs who earned the highest ratings on KAIST CS student survey</div>
+      </li>
+      <li>
+        <div class="award-title">Excellence Award <span class="award-highlight">(Mayoral Award)</span> at Korea Software Convergence Hackathon 2019</div>
+        <div class="award-desc">Developed an automatic traffic light control system based on reinforcement learning</div>
+      </li>
+      <li>
+        <div class="award-title">Honorable Mention Award at Undergraduate Student Paper Competition 2019, KSC &amp; KCC</div>
+        <div class="award-desc">Proposed a method to reduce blocking effects of DCT-based X-ray grid line suppression</div>
+      </li>
+      <li>
+        <div class="award-title">Silver Prize at Undergraduate Student Paper Competition 2018, KIPS</div>
+        <div class="award-desc">Proposed a DCT-based X-ray grid line suppression method using dynamic segmentation</div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i> Back to top</a>
+    </p>
+  </footer>
+
 </div>
 
 </body>
