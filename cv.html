@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Jihyun Lee</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #334155;
+      background: #fff;
+      font-size: 14px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: #3b72c4; text-decoration: none; }
+    a:hover { color: #2554a0; }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 56px 52px 48px;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1e293b;
+      margin-bottom: 10px;
+    }
+
+    .header .subtitle {
+      font-size: 16px;
+      color: #475569;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+    }
+
+    .header .contact {
+      font-size: 14px;
+      color: #475569;
+    }
+
+    .header .contact a { color: #475569; }
+    .header .contact a:hover { color: #3b72c4; }
+
+    .header .contact .sep {
+      margin: 0 10px;
+      color: #cbd5e1;
+    }
+
+    /* ── Sections ── */
+    .section { margin-bottom: 54px; }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #1e293b;
+      margin-bottom: 18px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #1e293b;
+      display: inline-block;
+    }
+
+    .section-title-wrap {
+      border-bottom: 1px solid #f1f5f9;
+      margin-bottom: 18px;
+    }
+
+    .subsection-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1e293b;
+      letter-spacing: -0.01em;
+      margin-top: 28px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    /* ── Entries ── */
+    .entry { margin-bottom: 20px; }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      font-size: 15px;
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .entry-title .inst-logo {
+      opacity: 0.85;
+      flex-shrink: 0;
+      object-fit: contain;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .entry-title .inst-logo.logo-meta { height: 14px; width: auto; }
+    .entry-title .inst-logo.logo-kaist { height: 22px; width: auto; }
+    .entry-title .inst-logo.logo-handong { height: 22px; width: auto; }
+
+    .entry-date {
+      font-size: 12.5px;
+      color: #64748b;
+      flex-shrink: 0;
+      margin-left: 16px;
+      font-weight: 400;
+    }
+
+    .entry-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .entry-role {
+      font-size: 13.5px;
+      color: #64748b;
+      font-style: italic;
+    }
+
+    .entry-location {
+      font-size: 12.5px;
+      color: #64748b;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+
+    .entry-details {
+      margin-top: 6px;
+      list-style: none;
+    }
+
+    .entry-details li {
+      font-size: 13.5px;
+      color: #475569;
+      padding: 2px 0 2px 14px;
+      position: relative;
+      line-height: 1.65;
+    }
+
+    .entry-details li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    /* ── Publications ── */
+    .pub-list { }
+
+    .pub {
+      display: flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid #f8fafc;
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+
+    .pub:last-child { border-bottom: none; }
+
+    .pub-num {
+      color: #94a3b8;
+      font-size: 11.5px;
+      font-weight: 500;
+      flex-shrink: 0;
+      min-width: 32px;
+      text-align: right;
+      padding-top: 2px;
+    }
+
+    .pub-content {
+      flex: 1;
+      color: #475569;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 12px;
+    }
+    .pub-content strong { color: #0f172a; font-weight: 600; }
+    .pub-text { }
+    .pub-venue-wrap {
+      text-align: right;
+      white-space: nowrap;
+      padding-top: 1px;
+    }
+    .pub-content .venue {
+      font-weight: 600;
+      font-size: 12.5px;
+      color: #0f172a;
+      letter-spacing: 0.01em;
+    }
+    .pub-content .note { color: #94a3b8; font-size: 12px; }
+
+    /* ── Simple list ── */
+    .simple-list { list-style: none; padding: 0; }
+
+    .simple-list li {
+      font-size: 13.5px;
+      color: #475569;
+      padding: 5px 0 5px 14px;
+      position: relative;
+      line-height: 1.65;
+    }
+
+    .simple-list li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    .simple-list li strong { color: #0f172a; font-weight: 600; }
+
+    .list-sep {
+      color: #cbd5e1;
+      margin: 0 5px;
+    }
+
+    /* ── Item grid (awards, activities, teaching) ── */
+    .item-grid {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 4px 20px;
+      font-size: 13.5px;
+      line-height: 1.65;
+    }
+
+    .item-left {
+      color: #475569;
+    }
+
+    .item-left strong { color: #0f172a; }
+
+    .item-right {
+      color: #64748b;
+      text-align: right;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+
+    /* ── Print ── */
+    @media print {
+      body { font-size: 12.5px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .page { padding: 20px 0; max-width: none; }
+      a { color: #334155 !important; text-decoration: none !important; }
+      .pub-content .venue { background: none; padding: 0; }
+      .header h1 { font-size: 28px; }
+      .entry { page-break-inside: avoid; }
+      .section-title-wrap { page-break-after: avoid; }
+      .subsection-title { page-break-after: avoid; }
+    }
+
+    /* WeasyPrint fix: ensure entry headers don't break */
+    .entry-title { white-space: nowrap; }
+    .entry-date { white-space: nowrap; }
+
+    @media (max-width: 640px) {
+      .page { padding: 32px 24px; }
+      .header h1 { font-size: 28px; letter-spacing: 0.06em; }
+      .entry-header, .entry-sub { flex-direction: column; }
+      .entry-date, .entry-location { margin-left: 0; margin-top: 2px; }
+      .activity-grid { grid-template-columns: 1fr; gap: 2px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Jihyun Lee</h1>
+    <div class="subtitle">Postdoctoral AI Research Scientist at Meta</div>
+    <div class="contact">
+      <a href="mailto:jihyunlee@meta.com">jihyunlee@meta.com</a>
+      <span class="sep">|</span>
+      <a href="https://jyunlee.github.io">jyunlee.github.io</a>
+      <span class="sep">|</span>
+      <a href="https://scholar.google.com/citations?user=UaMiOq8AAAAJ">Google Scholar</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/jyunlee">GitHub</a>
+    </div>
+  </div>
+
+  <!-- Research Statement -->
+  <div style="margin-bottom: 48px; padding: 20px 28px; background: #f8fafc; border-radius: 8px; border-left: 3px solid #cbd5e1;">
+    <p style="font-size: 14px; color: #334155; line-height: 1.8; margin: 0;">
+      Jihyun's research aims to enable artificial intelligence to visually understand and simulate human behavior, including interactions with the surrounding environment. Recently, she has been focusing on hand interaction reconstruction and generation.
+    </p>
+  </div>
+
+  <!-- Work Experience -->
+  <div class="section">
+    <div class="section-title-wrap"><div class="section-title">Work Experience</div></div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><img src="/resources/meta-icon.svg" alt="Meta" class="inst-logo logo-meta">Meta (Codec Avatars Lab)</span>
+        <span class="entry-date">Sep 2025 – Present</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Postdoctoral AI Research Scientist</span>
+        <span class="entry-location">Pittsburgh, United States</span>
+      </div>
+      <ul class="entry-details">
+        <li>Working with <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a> and <a href="https://sofienbouaziz.com/">Sofien Bouaziz</a></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><img src="/resources/meta-icon.svg" alt="Meta" class="inst-logo logo-meta">Meta (Codec Avatars Lab)</span>
+        <span class="entry-date">Jun 2024 – Nov 2024</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Research Scientist Intern</span>
+        <span class="entry-location">Pittsburgh, United States</span>
+      </div>
+      <ul class="entry-details">
+        <li>Hosted by <a href="https://scholar.google.com/citations?user=ss-IvjMAAAAJ">Jason Saragih</a>; collaborators: <a href="https://sites.google.com/view/xuweipeng/">Weipeng Xu</a>, <a href="https://alexanderrichard.github.io/">Alexander Richard</a>, <a href="https://scholar.google.com.tw/citations?user=sFQD3k4AAAAJ">Shih-En Wei</a>, <a href="https://shunsukesaito.github.io/">Shunsuke Saito</a></li>
+        <li>Developed a one-step diffusion model for real-time human motion estimation from egocentric video</li>
+        <li>Resulting paper accepted at CVPR 2025</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <div class="section">
+    <div class="section-title-wrap"><div class="section-title">Education</div></div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><img src="/resources/kaist-logo.png" alt="KAIST" class="inst-logo logo-kaist">KAIST</span>
+        <span class="entry-date">Sep 2020 – Aug 2025</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Integrated Master's & Ph.D. in Computer Science</span>
+        <span class="entry-location">Daejeon, South Korea</span>
+      </div>
+      <ul class="entry-details">
+        <li>Advisors: <a href="https://sites.google.com/view/tkkim/home">Tae-Kyun (T-K) Kim</a> and <a href="https://mhsung.github.io/">Minhyuk Sung</a></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title"><img src="/resources/handong-logo.png" alt="Handong" class="inst-logo logo-handong">Handong Global University</span>
+        <span class="entry-date">Mar 2017 – Aug 2020</span>
+      </div>
+      <div class="entry-sub">
+        <span class="entry-role">Bachelor of Science in Computer Science</span>
+        <span class="entry-location">Pohang, South Korea</span>
+      </div>
+      <ul class="entry-details">
+        <li>Top rank in CS & EE Department (GPA: 4.45 / 4.5) · Early Graduation</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Publications -->
+  <div class="section">
+    <div class="section-title-wrap"><div class="section-title">Publications</div></div>
+    <div class="subsection-title">International Conferences & Journals</div>
+
+    <div class="pub-list">
+      <div class="pub">
+        <div class="pub-num">[C1]</div>
+        <div class="pub-content"><span class="pub-text">Large-Scale Codec Avatars Team, Meta, "<a href="https://junxuan-li.github.io/lca/">Large-Scale Codec Avatars: The Unreasonable Effectiveness of Large-Scale Avatar Pretraining</a>"</span><span class="pub-venue-wrap"><span class="venue">CVPR 2026</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C2]</div>
+        <div class="pub-content"><span class="pub-text">C. Lee, <strong>J. Lee</strong>, T-K. Kim, "<a href="https://kaistchangmin.github.io/MPMAvatar/">MPMAvatar: Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics</a>"</span><span class="pub-venue-wrap"><span class="venue">NeurIPS 2025</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C3]</div>
+        <div class="pub-content"><span class="pub-text">Y. Min*, D. Choi*, K. Yeo, <strong>J. Lee</strong>, M. Sung, "<a href="https://origen2025.github.io/">ORIGEN: Zero-Shot 3D Orientation Grounding in Text-to-Image Generation</a>"</span><span class="pub-venue-wrap"><span class="venue">NeurIPS 2025</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C4]</div>
+        <div class="pub-content"><span class="pub-text">T. Ohkawa, <strong>J. Lee</strong>, S. Saito, J. Saragih, F. Prada, Y. Xu, S. Yu, R. Furuta, Y. Sato, T. Shiratori, "<a href="https://tkhkaeio.github.io/projects/25-scgen/index.html">Generative Modeling of Shape-Dependent Self-Contact Human Poses</a>"</span><span class="pub-venue-wrap"><span class="venue">ICCV 2025</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C5]</div>
+        <div class="pub-content"><span class="pub-text">N. Suzuki, T. Ohkawa, T. Banno, <strong>J. Lee</strong>, R. Furuta, Y. Sato, "Affordance-Guided Diffusion Prior for 3D Hand Reconstruction"</span><span class="pub-venue-wrap"><span class="venue">ICCVW 2025</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C6]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>, W. Xu, A. Richard, S. Wei, S. Saito, S. Bai, T. Wang, M. Sung, T-K. Kim, J. Saragih, "<a href="https://jyunlee.github.io/projects/rewind/">REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning</a>"</span><span class="pub-venue-wrap"><span class="venue">CVPR 2025</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C7]</div>
+        <div class="pub-content"><span class="pub-text">W. Cho, <strong>J. Lee</strong>, M. Yi, M. Kim, T. Woo, D. Kim, T. Ha, H. Lee, J. Ryu, W. Woo, T-K. Kim, "<a href="https://hograspnet2024.github.io">Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics</a>"</span><span class="pub-venue-wrap"><span class="venue">ECCV 2024</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C8]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>, S. Saito, G. Nam, M. Sung, T-K. Kim, "<a href="https://jyunlee.github.io/projects/interhandgen/">InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion</a>"</span><span class="pub-venue-wrap"><span class="venue">CVPR 2024</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C9]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>, J. Jang, D. Kim, M. Sung, T-K. Kim, "<a href="https://jyunlee.github.io/projects/fourier-hand-flow/">FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow</a>"</span><span class="pub-venue-wrap"><span class="venue">NeurIPS 2023</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C10]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>, M. Sung, H. Choi, T-K. Kim, "<a href="https://jyunlee.github.io/projects/implicit-two-hands/">Im2Hands: Learning Attentive Implicit Representation of Interacting Two-Hand Shapes</a>"</span><span class="pub-venue-wrap"><span class="venue">CVPR 2023</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C11]</div>
+        <div class="pub-content"><span class="pub-text">H. Park*, <strong>J. Lee</strong>*, Y. Seo, T. Min, J. Yun, J. Kim, T-K. Kim, "Contrastive Knowledge Distillation for Anomaly Detection in Multi-Illumination/Focus Display Images"</span><span class="pub-venue-wrap"><span class="venue">MVA 2023 <span class="note">(oral)</span></span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C12]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>*, M. Sung*, H. Kim, T-K. Kim, "<a href="https://jyunlee.github.io/projects/pop-out-motion/">Pop-Out Motion: 3D-Aware Image Deformation via Learning Shape Laplacian</a>"</span><span class="pub-venue-wrap"><span class="venue">CVPR 2022</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C13]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>, B. Bhattarai, T-K. Kim, "<a href="https://openaccess.thecvf.com/content/CVPR2021W/AMFG/papers/Lee_Face_Parsing_From_RGB_and_Depth_Using_Cross-Domain_Mutual_Learning_CVPRW_2021_paper.pdf">Face Parsing from RGB and Depth Using Cross-Domain Mutual Learning</a>"</span><span class="pub-venue-wrap"><span class="venue">CVPRW 2021 <span class="note">(oral)</span></span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C14]</div>
+        <div class="pub-content"><span class="pub-text">M. Kang, <strong>J. Lee</strong>, S. Kim, I. Kim, "Fast DCTTS: Efficient Deep Convolutional Text-to-Speech"</span><span class="pub-venue-wrap"><span class="venue">ICASSP 2021</span></span></div>
+      </div>
+    </div>
+
+    <div class="subsection-title">Domestic Conferences (in Korean)</div>
+
+    <div class="pub-list">
+      <div class="pub">
+        <div class="pub-num">[C15]</div>
+        <div class="pub-content"><span class="pub-text">D. Kim, H. Kim, <strong>J. Lee</strong>, J. Park, H. Kim, "Elimination of Grid Lines in the Object Boundary Area of X-ray Images"</span><span class="pub-venue-wrap"><span class="venue">KCC 2019</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C16]</div>
+        <div class="pub-content"><span class="pub-text"><strong>J. Lee</strong>, J. Park, J. Seo, H. Kim, "A Dynamically Segmented DCT Technique for Grid Artifact Suppression in X-ray Images"</span><span class="pub-venue-wrap"><span class="venue">KIPS 2018</span></span></div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-num">[C17]</div>
+        <div class="pub-content"><span class="pub-text">J. Jung, J. Park, <strong>J. Lee</strong>, G. Jung, H. Kim, "A Blocking Effect Reduction Technique for the Grid Line Suppression Method using DCT"</span><span class="pub-venue-wrap"><span class="venue">KSC 2018</span></span></div>
+      </div>
+    </div>
+
+    <div class="subsection-title">Domestic Journal (in Korean)</div>
+
+    <div class="pub-list">
+      <div class="pub">
+        <div class="pub-num">[J1]</div>
+        <div class="pub-content"><span class="pub-text">H. Kim, J. Jung, <strong>J. Lee</strong>, J. Park, J. Seo, H. Kim, "A Dynamically Segmented DCT Technique for Grid Artifact Suppression in X-ray Images"</span><span class="pub-venue-wrap"><span class="venue">KTSDE 2019</span></span></div>
+      </div>
+    </div>
+
+    <div class="subsection-title">Patent</div>
+
+    <div class="pub-list">
+      <div class="pub">
+        <div class="pub-num">[P1]</div>
+        <div class="pub-content"><span class="pub-text">M. Kang, S. Kim, S. Kim, <strong>J. Lee</strong>, I. Kim, "Method for Lightweight Speech Synthesis of End-to-End DCTTS"</span><span class="pub-venue-wrap"><span class="venue">KR Patent</span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Awards -->
+  <div class="section">
+    <div class="section-title-wrap"><div class="section-title">Awards & Honors</div></div>
+    <div class="item-grid">
+      <span class="item-left"><strong>Outstanding Reviewer</strong>, ECCV</span>
+      <span class="item-right">2024</span>
+
+      <span class="item-left"><strong>Outstanding TA Award</strong>, KAIST</span>
+      <span class="item-right">2022</span>
+
+      <span class="item-left"><strong>Mayor's Award</strong> ($3,000), Korea Software Convergence Hackathon</span>
+      <span class="item-right">2019</span>
+
+      <span class="item-left"><strong>Honorable Mention Award</strong>, Undergraduate Paper Competition, KSC</span>
+      <span class="item-right">2019</span>
+
+      <span class="item-left"><strong>Honorable Mention Award</strong>, Undergraduate Paper Competition, KCC</span>
+      <span class="item-right">2019</span>
+
+      <span class="item-left"><strong>Silver Prize</strong>, Undergraduate Paper Competition, KIPS</span>
+      <span class="item-right">2018</span>
+    </div>
+  </div>
+
+  <!-- Academic Activities -->
+  <div class="section">
+    <div class="section-title-wrap"><div class="section-title">Academic Activities</div></div>
+    <div class="subsection-title">Reviewer</div>
+    <div class="item-grid">
+      <span class="item-left">Computer Vision: CVPR, ICCV, ECCV, IJCV, etc.</span>
+      <span class="item-right"></span>
+
+      <span class="item-left">Machine Learning: ICLR, NeurIPS, ICML, AAAI</span>
+      <span class="item-right"></span>
+
+      <span class="item-left">Computer Graphics: SIGGRAPH, PG</span>
+      <span class="item-right"></span>
+    </div>
+
+    <div class="subsection-title">Invited Talk</div>
+    <div class="item-grid">
+      <span class="item-left"><a href="https://hands-workshop.org/workshop2025.html">HANDS Workshop</a> at ICCV</span>
+      <span class="item-right">2025</span>
+    </div>
+
+    <div class="subsection-title">Student Organizer</div>
+    <div class="item-grid">
+      <span class="item-left"><a href="https://research.google/outreach/explore-csr/">Google exploreCSR</a> Workshops at KAIST</span>
+      <span class="item-right">2022–2023</span>
+    </div>
+  </div>
+
+  <!-- Teaching -->
+  <div class="section">
+    <div class="section-title-wrap"><div class="section-title">Teaching Experience</div></div>
+    <div class="item-grid">
+      <span class="item-left">Artificial Intelligence and Machine Learning (CS570), KAIST</span>
+      <span class="item-right">2021–2023</span>
+
+      <span class="item-left">Machine Learning for Computer Vision (CS492), KAIST</span>
+      <span class="item-right">2021–2022</span>
+
+      <span class="item-left">Operating System (ECE30021), Handong Global University</span>
+      <span class="item-right">2020</span>
+
+      <span class="item-left">C++ Programming (ECE20018), Handong Global University</span>
+      <span class="item-right">2019</span>
+
+      <span class="item-left">Data Structure (ECE20010), Handong Global University</span>
+      <span class="item-right">2018</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
