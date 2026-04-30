@@ -1,0 +1,209 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage[top=0.9in, bottom=0.9in, left=1.1in, right=1.1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{raleway}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage[x11names]{xcolor}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{microtype}
+
+% Spacing
+\setstretch{1.1}
+\AtBeginDocument{\frenchspacing}
+
+% Colors — minimal palette
+\definecolor{gray}{RGB}{120, 120, 130}
+\definecolor{darktext}{RGB}{30, 30, 35}
+\definecolor{linkblue}{RGB}{40, 70, 150}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  urlcolor=linkblue,
+  pdfauthor={Jihyun Lee},
+  pdftitle={Jihyun Lee - CV}
+}
+
+% Section formatting — centered small caps with gray rule
+\titleformat{\section}{\large\scshape\centering}{}{0em}{}
+\titlespacing*{\section}{0pt}{16pt}{8pt}
+
+% Subsection — left-aligned, gray, small caps
+\titleformat{\subsection}[block]{\vspace{-2pt}\scshape\color{gray}\small}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{8pt}{4pt}
+
+\pagestyle{empty}
+
+% List settings — gray dashes
+\setlist[itemize]{leftmargin=1.6em, itemsep=2pt, parsep=0pt, topsep=3pt, label={\color{gray}\textendash}}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% Separator
+\newcommand{\sep}{{\color{gray}\;\textbullet\;\;}}
+\newcommand{\hsep}{\noindent\textcolor{gray!40}{\rule{\textwidth}{0.5pt}}\vspace{4pt}}
+
+% Entry command
+\newcommand{\cventry}[4]{%
+  \noindent\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & {\footnotesize\color{gray} #2} \\[1pt]
+    {\small\color{gray}#3} & {\footnotesize\color{gray} #4}
+  \end{tabularx}\vspace{1pt}%
+}
+
+% Publication command
+\newcommand{\pub}[4]{%
+  \noindent\hangindent=1.6em\hangafter=1
+  {\small\color{gray}[#1]}\hspace{0.3em}{\small #2, ``#3,'' \textbf{#4}.}\par\vspace{3pt}%
+}
+
+\begin{document}
+
+% ── Header ──────────────────────────────────────────
+\begin{center}
+  {\fontsize{24}{28}\selectfont\scshape Jihyun Lee} \\[8pt]
+  {\small\color{gray}
+    Postdoctoral AI Research Scientist\sep Meta (Codec Avatars Lab)} \\[6pt]
+  {\footnotesize\color{gray}
+    \href{mailto:jihyunlee@meta.com}{jihyunlee@meta.com}
+    \sep
+    \href{https://jyunlee.github.io}{jyunlee.github.io}
+    \sep
+    \href{https://scholar.google.com/citations?user=UaMiOq8AAAAJ}{Google Scholar}
+    \sep
+    \href{https://github.com/jyunlee}{GitHub}
+  }
+\end{center}
+
+\vspace{4pt}
+
+% ── Education ───────────────────────────────────────
+\hsep
+\section{Education}
+
+\cventry{KAIST}{Daejeon, South Korea}{Integrated Master's \& Ph.D. in Computer Science}{Sep 2020 -- Aug 2025}
+\begin{itemize}
+  \item Advisors: \href{https://sites.google.com/view/tkkim/home}{Tae-Kyun (T-K) Kim} and \href{https://mhsung.github.io/}{Minhyuk Sung}
+\end{itemize}
+
+\vspace{6pt}
+
+\cventry{Handong Global University}{Pohang, South Korea}{Bachelor of Science in Computer Science}{Mar 2017 -- Aug 2020}
+\begin{itemize}
+  \item Top rank in CS \& EE Department (GPA: 4.45\,/\,4.5)\sep Early Graduation
+\end{itemize}
+
+% ── Research Experience ─────────────────────────────
+\hsep
+\section{Research Experience}
+
+\cventry{Meta (Codec Avatars Lab)}{Pittsburgh, United States}{Postdoctoral AI Research Scientist}{Sep 2025 -- Present}
+\begin{itemize}
+  \item Working with \href{https://shunsukesaito.github.io/}{Shunsuke Saito} and \href{https://sofienbouaziz.com/}{Sofien Bouaziz}
+\end{itemize}
+
+\vspace{6pt}
+
+\cventry{Meta (Codec Avatars Lab)}{Pittsburgh, United States}{Research Scientist Intern}{Jun 2024 -- Nov 2024}
+\begin{itemize}
+  \item Hosted by \href{https://scholar.google.com/citations?user=ss-IvjMAAAAJ}{Jason Saragih}; collaborators: Weipeng Xu, Alexander Richard, Shih-En Wei, Shunsuke Saito
+  \item Developed a one-step diffusion model for real-time human motion estimation from egocentric video
+  \item Resulting paper accepted at CVPR 2025
+\end{itemize}
+
+% ── Publications ────────────────────────────────────
+\hsep
+\section{Publications}
+
+{\footnotesize\color{gray} Full list including domestic publications available at \href{https://jyunlee.github.io}{jyunlee.github.io}.}
+
+\vspace{4pt}
+\subsection{international conferences \& journals}
+
+\pub{C1}{\textbf{J.\ Lee}*, C.\ Lee*, D.\ Kim, T-K.\ Kim}{PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions}{ICML 2026}
+
+\pub{C2}{Large-Scale Codec Avatars Team, Meta}{\href{https://junxuan-li.github.io/lca/}{Large-Scale Codec Avatars: The Unreasonable Effectiveness of Large-Scale Avatar Pretraining}}{CVPR 2026}
+
+\pub{C3}{C.\ Lee, \textbf{J.\ Lee}, T-K.\ Kim}{\href{https://kaistchangmin.github.io/MPMAvatar/}{MPMAvatar: Learning 3D Gaussian Avatars with Accurate and Robust Physics-Based Dynamics}}{NeurIPS 2025}
+
+\pub{C4}{Y.\ Min*, D.\ Choi*, K.\ Yeo, \textbf{J.\ Lee}, M.\ Sung}{\href{https://origen2025.github.io/}{ORIGEN: Zero-Shot 3D Orientation Grounding in Text-to-Image Generation}}{NeurIPS 2025}
+
+\pub{C5}{T.\ Ohkawa, \textbf{J.\ Lee}, S.\ Saito, J.\ Saragih, F.\ Prada, Y.\ Xu, S.\ Yu, R.\ Furuta, Y.\ Sato, T.\ Shiratori}{\href{https://tkhkaeio.github.io/projects/25-scgen/index.html}{Generative Modeling of Shape-Dependent Self-Contact Human Poses}}{ICCV 2025}
+
+\pub{C6}{N.\ Suzuki, T.\ Ohkawa, T.\ Banno, \textbf{J.\ Lee}, R.\ Furuta, Y.\ Sato}{Affordance-Guided Diffusion Prior for 3D Hand Reconstruction}{ICCVW 2025}
+
+\pub{C7}{\textbf{J.\ Lee}, W.\ Xu, A.\ Richard, S.\ Wei, S.\ Saito, S.\ Bai, T.\ Wang, M.\ Sung, T-K.\ Kim, J.\ Saragih}{\href{https://jyunlee.github.io/projects/rewind/}{REWIND: Real-Time Egocentric Whole-Body Motion Diffusion with Exemplar-Based Identity Conditioning}}{CVPR 2025}
+
+\pub{C8}{W.\ Cho, \textbf{J.\ Lee}, M.\ Yi, M.\ Kim, T.\ Woo, D.\ Kim, T.\ Ha, H.\ Lee, J.\ Ryu, W.\ Woo, T-K.\ Kim}{\href{https://hograspnet2024.github.io}{Dense Hand-Object(HO) GraspNet with Full Grasping Taxonomy and Dynamics}}{ECCV 2024}
+
+\pub{C9}{\textbf{J.\ Lee}, S.\ Saito, G.\ Nam, M.\ Sung, T-K.\ Kim}{\href{https://jyunlee.github.io/projects/interhandgen/}{InterHandGen: Two-Hand Interaction Generation via Cascaded Reverse Diffusion}}{CVPR 2024}
+
+\pub{C10}{\textbf{J.\ Lee}, J.\ Jang, D.\ Kim, M.\ Sung, T-K.\ Kim}{\href{https://jyunlee.github.io/projects/fourier-hand-flow/}{FourierHandFlow: Neural 4D Hand Representation Using Fourier Query Flow}}{NeurIPS 2023}
+
+\pub{C11}{\textbf{J.\ Lee}, M.\ Sung, H.\ Choi, T-K.\ Kim}{\href{https://jyunlee.github.io/projects/implicit-two-hands/}{Im2Hands: Learning Attentive Implicit Representation of Interacting Two-Hand Shapes}}{CVPR 2023}
+
+\pub{C12}{H.\ Park*, \textbf{J.\ Lee}*, Y.\ Seo, T.\ Min, J.\ Yun, J.\ Kim, T-K.\ Kim}{Contrastive Knowledge Distillation for Anomaly Detection in Multi-Illumination/Focus Display Images}{MVA 2023 \textup{(oral)}}
+
+\pub{C13}{\textbf{J.\ Lee}*, M.\ Sung*, H.\ Kim, T-K.\ Kim}{\href{https://jyunlee.github.io/projects/pop-out-motion/}{Pop-Out Motion: 3D-Aware Image Deformation via Learning Shape Laplacian}}{CVPR 2022}
+
+\pub{C14}{\textbf{J.\ Lee}, B.\ Bhattarai, T-K.\ Kim}{\href{https://openaccess.thecvf.com/content/CVPR2021W/AMFG/papers/Lee_Face_Parsing_From_RGB_and_Depth_Using_Cross-Domain_Mutual_Learning_CVPRW_2021_paper.pdf}{Face Parsing from RGB and Depth Using Cross-Domain Mutual Learning}}{CVPRW 2021 \textup{(oral)}}
+
+\pub{C15}{M.\ Kang, \textbf{J.\ Lee}, S.\ Kim, I.\ Kim}{Fast DCTTS: Efficient Deep Convolutional Text-to-Speech}{ICASSP 2021}
+
+\subsection{domestic conferences (in korean)}
+
+\pub{C16}{D.\ Kim, H.\ Kim, \textbf{J.\ Lee}, J.\ Park, H.\ Kim}{Elimination of Grid Lines in the Object Boundary Area of X-ray Images}{KCC 2019}
+
+\pub{C17}{\textbf{J.\ Lee}, J.\ Park, J.\ Seo, H.\ Kim}{A Dynamically Segmented DCT Technique for Grid Artifact Suppression in X-ray Images}{KIPS 2018}
+
+\pub{C18}{J.\ Jung, J.\ Park, \textbf{J.\ Lee}, G.\ Jung, H.\ Kim}{A Blocking Effect Reduction Technique for the Grid Line Suppression Method using DCT}{KSC 2018}
+
+\subsection{domestic journal (in korean)}
+
+\pub{J1}{H.\ Kim, J.\ Jung, \textbf{J.\ Lee}, J.\ Park, J.\ Seo, H.\ Kim}{A Dynamically Segmented DCT Technique for Grid Artifact Suppression in X-ray Images}{KTSDE, 8(4), 171--178, 2019}
+
+\subsection{patent}
+
+\pub{P1}{M.\ Kang, S.\ Kim, S.\ Kim, \textbf{J.\ Lee}, I.\ Kim}{Method for Lightweight Speech Synthesis of End-to-End DCTTS}{KR Patent 10-2019-0}
+
+% ── Awards ──────────────────────────────────────────
+\hsep
+\section{Awards \& Honors}
+
+\begin{itemize}[itemsep=3pt]
+  \item \textbf{Outstanding Reviewer}\sep ECCV 2024
+  \item \textbf{Outstanding TA Award}\sep KAIST 2022
+  \item \textbf{Mayor's Award} (\$3,000)\sep Korea Software Convergence Hackathon, Ministry of Science and ICT, 2019
+  \item \textbf{Honorable Mention Award}\sep Undergraduate Paper Competition, KSC 2019
+  \item \textbf{Honorable Mention Award}\sep Undergraduate Paper Competition, KCC 2019
+  \item \textbf{Silver Prize}\sep Undergraduate Paper Competition, KIPS 2018
+\end{itemize}
+
+% ── Academic Activities ─────────────────────────────
+\hsep
+\section{Academic Activities}
+
+\begin{itemize}[itemsep=3pt]
+  \item \textbf{Reviewer}\sep CVPR (2023--), ICCV (2025--), ECCV (2024--), ICLR (2026--), NeurIPS (2024--), ICML (2025--), AAAI (2023--), SIGGRAPH (2026--), IJCV (2025--), PG (2023--), Image and Vision Computing (2022--)
+  \item \textbf{Invited Talk}\sep \href{https://hands-workshop.org/workshop2025.html}{HANDS Workshop} at ICCV 2025
+  \item \textbf{Student Organizer}\sep \href{https://research.google/outreach/explore-csr/}{Google exploreCSR} Workshops at KAIST (2022--2023)
+\end{itemize}
+
+% ── Teaching ────────────────────────────────────────
+\hsep
+\section{Teaching Experience}
+
+\begin{itemize}[itemsep=2pt]
+  \item Artificial Intelligence and Machine Learning (CS570)\sep KAIST, 2021--2023
+  \item Machine Learning for Computer Vision (CS492)\sep KAIST, 2021--2022
+  \item Operating System (ECE30021)\sep Handong Global University, 2020
+  \item C++ Programming (ECE20018)\sep Handong Global University, 2019
+  \item Data Structure (ECE20010)\sep Handong Global University, 2018
+\end{itemize}
+
+\end{document}
