@@ -166,9 +166,9 @@
 
   <div class="container is-max-desktop">
     <h4 class="subtitle has-text-centered" style="margin-top:25px;">
-      ✋ <b>PhysHanDI</b> is the first framework for dense 3D reconstruction of both interacting hands and
-      non-rigid deformable objects from sparse-view RGB-D videos, by physically simulating object deformations
-      driven by forces induced from densely reconstructed 3D hand motions.
+      To the best of our knowledge, <b>PhysHanDI</b> is the first framework to close the loop between hand
+      reconstruction and deformable object simulation, enabling dense 3D reconstruction of both interacting hands and
+      non-rigid deformable objects from sparse-view RGB-D videos.
     </h4>
     <br><br>
   </div>
@@ -183,8 +183,6 @@
         <h2 class="title is-3" style="margin-top:-15px">🛠 Method Overview</h2>
         <div class="content has-text-justified" style="max-width:800px; margin:0 auto;">
           <p>
-            To the best of our knowledge, <b>PhysHanDI</b> is the first work to close the loop between hand reconstruction
-            and deformable object simulation.
             Given sparse-view RGB-D videos, <b>PhysHanDI</b> reconstructs a dense 3D hand–deformable object interaction
             model through a three-stage optimization pipeline: (1) <b>hand reconstruction</b>, fitting a dense parametric
             hand model (MANO) to the RGB-D observations; (2) <b>object reconstruction</b>, fitting a Spring–Mass model whose
@@ -244,7 +242,7 @@
         <h2 class="title is-3">🎬 Qualitative Comparisons</h2>
         <div class="content has-text-justified" style="max-width:800px; margin:0 auto;">
           <p>
-            Compared to state-of-the-art baselines, <b>PhysHanDI</b> produces more accurate object simulations that are
+            Compared to prior state-of-the-art baselines, <b>PhysHanDI</b> produces more accurate object simulations that are
             better aligned with the ground-truth observations and the interacting hand contacts, on both reconstruction
             and future prediction. Yellow circles indicate regions where baselines are less accurately aligned.
           </p>
@@ -263,7 +261,7 @@
       <div class="content has-text-justified" style="max-width:800px; margin:0 auto;">
         <p>
           To evaluate reconstruction quality under dense hand–deformable object interactions, we introduce the
-          <b>DenseHDI</b> dataset, captured with three RealSense D455 RGB-D cameras that record synchronized three-view
+          <b>DenseHDI</b> dataset, captured with RealSense D455 RGB-D cameras that record synchronized three-view
           videos. Unlike the existing PhysTwin dataset, which mainly features sparse, point-like contacts, DenseHDI
           targets richer, full-palm interactions—such as wiping with a dishcloth or folding a pouch—that induce
           denser and more challenging hand–object contacts.
