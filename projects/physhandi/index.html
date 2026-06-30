@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners -->
+  <meta name="description" content="PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions (ICML 2026)">
+  <meta property="og:title" content="PhysHanDI"/>
+  <meta property="og:description" content="PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions (ICML 2026)"/>
+  <meta property="og:url" content="https://jyunlee.github.io/projects/physhandi/"/>
+  <meta property="og:image" content="data/teaser.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="PhysHanDI">
+  <meta name="twitter:description" content="PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions (ICML 2026)">
+  <meta name="twitter:image" content="data/teaser.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="keywords" content="hand-object interaction, deformable objects, physics-based reconstruction, 3D hand, contact, simulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>PhysHanDI</title>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✋</text></svg>"
+  />  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">✋ PhysHanDI</h1>
+            <h2 class="title is-4 publication-title" style="margin-top:-15px">Physics-Based Reconstruction of Hand-Deformable Object Interactions</h2>
+
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jyunlee.github.io/" target="_blank">Jihyun Lee</a><sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span class="author-block">
+                  <a href="https://github.com/KAISTChangmin/" target="_blank">Changmin Lee</a><sup>*</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://donghwankim0101.github.io/" target="_blank">Donghwan Kim</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                  <span class="author-block">
+                    <a href="https://sites.google.com/view/tkkim/home" target="_blank">Tae-Kyun Kim</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><b>KAIST</b></span>
+                  </div>
+
+                  <div class="is-size-6 publication-authors" style="margin-top:5px">
+                    <span class="author-block">* Equal contribution</span>
+                  </div>
+
+                  <div class="is-size-4 publication-authors" style="margin-top:18px">
+                    <b>ICML 2026</b></span>
+                  </div>
+
+                  <div class="column has-text-centered" style="margin-top:-7px">
+                    <div class="publication-links">
+
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2605.09538" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                      </span>
+
+                      <!-- Paper PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2605.09538" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser -->
+<section class="hero teaser" style="margin-top:-15px;">
+  <!-- Teaser result videos: 2 slides x 3 videos, arrows to swap -->
+  <style>
+    .vidwrap { position:relative; display:inline-block; }
+    .vidwrap video { display:block; height:380px; }
+    .vidlabel { position:absolute; left:4px; background:rgba(0,0,0,0.5); color:#fff;
+                font-size:9px; font-weight:600; padding:1px 5px; border-radius:3px; line-height:1.15;
+                white-space:nowrap; box-sizing:border-box; }
+    .vidlabel.lbl-top { top:10px; }
+    .vidlabel.lbl-bot { top:calc(50% + 6px); }
+  </style>
+  <div class="container" style="max-width:1000px; margin-top:0; position:relative;">
+    <div class="phys-slide" style="display:flex; gap:10px; justify-content:center; align-items:flex-start;">
+      <div class="vidwrap"><video muted loop autoplay playsinline><source src="data/res_single_lift_cloth_1.mp4" type="video/mp4"></video><span class="vidlabel lbl-top">Input</span><span class="vidlabel lbl-bot">Reconstruction</span></div>
+      <div class="vidwrap"><video muted loop autoplay playsinline><source src="data/res_single_lift_dinosor.mp4" type="video/mp4"></video><span class="vidlabel lbl-top">Input</span><span class="vidlabel lbl-bot">Reconstruction</span></div>
+      <div class="vidwrap"><video muted loop autoplay playsinline><source src="data/res_single_push_rope_1.mp4" type="video/mp4"></video><span class="vidlabel lbl-top">Input</span><span class="vidlabel lbl-bot">Reconstruction</span></div>
+    </div>
+    <div class="phys-slide" style="display:none; gap:10px; justify-content:center; align-items:flex-start;">
+      <div class="vidwrap"><video muted loop autoplay playsinline><source src="data/res_double_lift_cloth_1.mp4" type="video/mp4"></video><span class="vidlabel lbl-top">Input</span><span class="vidlabel lbl-bot">Reconstruction</span></div>
+      <div class="vidwrap"><video muted loop autoplay playsinline><source src="data/res_double_stretch_zebra.mp4" type="video/mp4"></video><span class="vidlabel lbl-top">Input</span><span class="vidlabel lbl-bot">Reconstruction</span></div>
+      <div class="vidwrap"><video muted loop autoplay playsinline><source src="data/res_single_push_rope.mp4" type="video/mp4"></video><span class="vidlabel lbl-top">Input</span><span class="vidlabel lbl-bot">Reconstruction</span></div>
+    </div>
+
+    <!-- swap arrows -->
+    <button onclick="physSwap(-1)" aria-label="Previous"
+      style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:none; background:rgba(54,54,54,0.85); color:#fff; font-size:22px; cursor:pointer; z-index:5;">&#8249;</button>
+    <button onclick="physSwap(1)" aria-label="Next"
+      style="position:absolute; right:-18px; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:none; background:rgba(54,54,54,0.85); color:#fff; font-size:22px; cursor:pointer; z-index:5;">&#8250;</button>
+
+    <!-- dots -->
+    <div style="text-align:center; margin-top:12px;">
+      <span class="phys-dot" style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#363636; margin:0 4px;"></span>
+      <span class="phys-dot" style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#c0c0c0; margin:0 4px;"></span>
+    </div>
+  </div>
+
+  <script>
+    var physCur = 0;
+    function physSwap(d) {
+      var slides = document.querySelectorAll('.phys-slide');
+      var dots = document.querySelectorAll('.phys-dot');
+      slides[physCur].style.display = 'none';
+      dots[physCur].style.background = '#c0c0c0';
+      physCur = (physCur + d + slides.length) % slides.length;
+      slides[physCur].style.display = 'flex';
+      dots[physCur].style.background = '#363636';
+    }
+  </script>
+
+  <div class="container is-max-desktop">
+    <h4 class="subtitle has-text-centered" style="margin-top:25px;">
+      ✋ <b>PhysHanDI</b> is the first framework for dense 3D reconstruction of both interacting hands and
+      non-rigid deformable objects from sparse-view RGB-D videos, by physically simulating object deformations
+      driven by forces induced from densely reconstructed 3D hand motions.
+    </h4>
+    <br><br>
+  </div>
+</section>
+<!-- End teaser -->
+
+<!-- Method Overview -->
+<section class="section hero is-light">
+  <div class="container" style="max-width:1000px;">
+    <div class="has-text-centered">
+      <div>
+        <h2 class="title is-3" style="margin-top:-15px">🛠 Method Overview</h2>
+        <div class="content has-text-justified" style="max-width:800px; margin:0 auto;">
+          <p>
+            To the best of our knowledge, <b>PhysHanDI</b> is the first work to close the loop between hand reconstruction
+            and deformable object simulation.
+            Given sparse-view RGB-D videos, <b>PhysHanDI</b> reconstructs a dense 3D hand–deformable object interaction
+            model through a three-stage optimization pipeline: (1) <b>hand reconstruction</b>, fitting a dense parametric
+            hand model (MANO) to the RGB-D observations; (2) <b>object reconstruction</b>, fitting a Spring–Mass model whose
+            deformations are simulated from interaction forces induced by the reconstructed hand motions; and
+            (3) <b>hand refinement</b>, which refines the hands via inverse physics using the fitted physics-based object
+            model. Unlike previous linear pipelines, we establish a novel cyclical dependency: reconstructed 3D hand
+            motions derive interaction forces for physically plausible object simulation, and the resulting deformable
+            object provides an inverse-physics prior to refine the hand poses.
+          </p>
+        </div>
+        <!-- Method figure slider: framework overview + inverse physics -->
+        <div style="position:relative; max-width:880px; margin:35px auto 0;">
+          <div class="method-slide" style="display:block;">
+            <img src="data/teaser.png?v=4" alt="PhysHanDI framework overview" style="width:100%;"/>
+          </div>
+          <div class="method-slide" style="display:none;">
+            <img src="data/fig_inverse_physics.png" alt="PhysHanDI inverse physics" style="width:100%;"/>
+          </div>
+
+          <!-- swap arrows -->
+          <button onclick="methodSwap(-1)" aria-label="Previous"
+            style="position:absolute; left:-18px; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:none; background:rgba(54,54,54,0.85); color:#fff; font-size:22px; cursor:pointer; z-index:5;">&#8249;</button>
+          <button onclick="methodSwap(1)" aria-label="Next"
+            style="position:absolute; right:-18px; top:50%; transform:translateY(-50%); width:44px; height:44px; border-radius:50%; border:none; background:rgba(54,54,54,0.85); color:#fff; font-size:22px; cursor:pointer; z-index:5;">&#8250;</button>
+
+          <!-- dots -->
+          <div style="text-align:center; margin-top:12px;">
+            <span class="method-dot" style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#363636; margin:0 4px;"></span>
+            <span class="method-dot" style="display:inline-block; width:10px; height:10px; border-radius:50%; background:#c0c0c0; margin:0 4px;"></span>
+          </div>
+        </div>
+
+        <script>
+          var methodCur = 0;
+          function methodSwap(d) {
+            var slides = document.querySelectorAll('.method-slide');
+            var dots = document.querySelectorAll('.method-dot');
+            slides[methodCur].style.display = 'none';
+            dots[methodCur].style.background = '#c0c0c0';
+            methodCur = (methodCur + d + slides.length) % slides.length;
+            slides[methodCur].style.display = 'block';
+            dots[methodCur].style.background = '#363636';
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method overview -->
+
+<!-- Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container" style="max-width:1000px;">
+      <div class="has-text-centered">
+        <br>
+        <h2 class="title is-3">🎬 Qualitative Comparisons</h2>
+        <div class="content has-text-justified" style="max-width:800px; margin:0 auto;">
+          <p>
+            Compared to state-of-the-art baselines, <b>PhysHanDI</b> produces more accurate object simulations that are
+            better aligned with the ground-truth observations and the interacting hand contacts, on both reconstruction
+            and future prediction. Yellow circles indicate regions where baselines are less accurately aligned.
+          </p>
+        </div>
+        <img src="data/results.png?v=3" alt="PhysHanDI qualitative comparisons" style="width:100%; max-width:1000px; margin-top:17px;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DenseHDI Dataset -->
+<section class="section hero is-light">
+  <div class="container" style="max-width:1000px;">
+    <div class="has-text-centered">
+      <h2 class="title is-3" style="margin-top:-15px">🧸 DenseHDI Dataset</h2>
+      <div class="content has-text-justified" style="max-width:800px; margin:0 auto;">
+        <p>
+          To evaluate reconstruction quality under dense hand–deformable object interactions, we introduce the
+          <b>DenseHDI</b> dataset, captured with three RealSense D455 RGB-D cameras that record synchronized three-view
+          videos. Unlike the existing PhysTwin dataset, which mainly features sparse, point-like contacts, DenseHDI
+          targets richer, full-palm interactions—such as wiping with a dishcloth or folding a pouch—that induce
+          denser and more challenging hand–object contacts.
+        </p>
+      </div>
+      <img src="data/densehdi.png" alt="DenseHDI dataset captured sequences" style="width:100%; max-width:880px; margin-top:17px;"/>
+    </div>
+  </div>
+</section>
+<!-- End DenseHDI Dataset -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@inproceedings{lee2026physhandi,
+    title={PhysHanDI: Physics-Based Reconstruction of Hand-Deformable Object Interactions},
+    author={Lee, Jihyun and Lee, Changmin and Kim, Donghwan and Kim, Tae-Kyun},
+    booktitle={ICML},
+    year={2026}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  </html>
