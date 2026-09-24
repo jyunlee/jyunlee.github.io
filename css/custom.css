@@ -309,6 +309,10 @@ a:hover {
   object-fit: cover;
 }
 
+.pub-img img.pub-img-contain {
+  object-fit: contain;
+}
+
 .pub-details {
   flex: 1;
   min-width: 0;
